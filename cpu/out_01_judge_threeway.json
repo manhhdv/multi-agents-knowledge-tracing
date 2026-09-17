@@ -1,0 +1,21 @@
+{
+ "n_turns": 1985,
+ "n_sava_abstain": 428,
+ "judge_binary": {
+  "coverage": 1.0,
+  "agreement_when_judging": 0.7541561712846347,
+  "n_judged": 1985
+ },
+ "judge_three_way": {
+  "coverage": 0.998992443324937,
+  "agreement_when_judging": 0.7302067574382249,
+  "n_judged": 1983
+ },
+ "judge_three_way_n_declined": 2,
+ "on_sava_abstained_turns": {
+  "judge_three_way": 0.585480093676815,
+  "judge_binary": 0.6495327102803738,
+  "numeric_regex": 0.4804177545691906,
+  "majority_class": 0.6658878504672897
+ }
+}

@@ -1,0 +1,6 @@
+row_0,conceptual,procedural,calculation,careless,other
+conceptual,2,5,0,0,0
+procedural,1,15,0,0,0
+calculation,0,3,0,0,0
+careless,0,0,0,0,1
+other,3,13,0,0,3

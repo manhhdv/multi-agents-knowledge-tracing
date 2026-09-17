@@ -1,0 +1,45 @@
+{
+ "tau": 0.8,
+ "params_used": {
+  "a": 1.089925932295499,
+  "b": -0.11185929931146367,
+  "lambda": 0.9041773762692995,
+  "mu": null,
+  "p_L": 0.0003353501304664781,
+  "m0": 0.9996646498687217,
+  "s": 0.00016432156396019648,
+  "g": 0.08725998067970851
+ },
+ "self_check": {
+  "auc": 0.7454219688486206,
+  "auc_released": 0.7454219688486206,
+  "ll": 0.5949347918231775,
+  "ll_released": 0.5949347918231775
+ },
+ "comparisons": [
+  {
+   "comparison": "CCMF day du vs bo Platt (chi bo loc)",
+   "n_turns_both_define_target": 1851,
+   "mta_same_kc": 0.990815775256618,
+   "mta_differs": 0.009184224743381986,
+   "n_kc_turn_pairs": 6304,
+   "mastered_flag_agreement": 0.9988895939086294
+  },
+  {
+   "comparison": "CCMF day du vs xac suat tho cuoi cung moi KC",
+   "n_turns_both_define_target": 1830,
+   "mta_same_kc": 0.8868852459016393,
+   "mta_differs": 0.11311475409836069,
+   "n_kc_turn_pairs": 6304,
+   "mastered_flag_agreement": 0.9706535532994924
+  },
+  {
+   "comparison": "CCMF day du vs sigmoid tho cuoi cung, khong bo loc",
+   "n_turns_both_define_target": 1834,
+   "mta_same_kc": 0.8854961832061069,
+   "mta_differs": 0.1145038167938931,
+   "n_kc_turn_pairs": 6304,
+   "mastered_flag_agreement": 0.9703362944162437
+  }
+ ]
+}
