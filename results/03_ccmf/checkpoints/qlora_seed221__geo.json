@@ -1,0 +1,263 @@
+{
+  "fixed": {
+    "0": {
+      "loss": 0.582634209075669,
+      "x": [
+        0.06219800165907179,
+        -0.036576311925170794,
+        -7.999991700671703,
+        -1.0198373313545623
+      ],
+      "x0": [
+        0.0,
+        0.0,
+        -2.0,
+        -2.0
+      ],
+      "runs": [
+        {
+          "stage": "main",
+          "success": true,
+          "loss": 0.5826342091056304,
+          "iterations": 198,
+          "nfev": 337,
+          "message": "Optimization terminated successfully."
+        },
+        {
+          "stage": "polish",
+          "success": true,
+          "loss": 0.582634209075669,
+          "iterations": 66,
+          "nfev": 122,
+          "message": "Optimization terminated successfully."
+        }
+      ],
+      "nit_total": 264,
+      "nfev_total": 459,
+      "hit_maxiter": false,
+      "success": true,
+      "n_polish_accepted": 1,
+      "elapsed_s": 0.534909832989797,
+      "kind": "fit",
+      "tag": "qlora_seed221",
+      "variant": "geo",
+      "start": 0
+    },
+    "1": {
+      "loss": 0.582634209096483,
+      "x": [
+        0.062172956376367,
+        -0.03657690319527082,
+        -7.999988876064018,
+        -1.0198298352980955
+      ],
+      "x0": [
+        0.3,
+        -0.2,
+        -1.5,
+        -2.5
+      ],
+      "runs": [
+        {
+          "stage": "main",
+          "success": true,
+          "loss": 0.5826342091125442,
+          "iterations": 217,
+          "nfev": 374,
+          "message": "Optimization terminated successfully."
+        },
+        {
+          "stage": "polish",
+          "success": true,
+          "loss": 0.582634209096483,
+          "iterations": 61,
+          "nfev": 113,
+          "message": "Optimization terminated successfully."
+        }
+      ],
+      "nit_total": 278,
+      "nfev_total": 487,
+      "hit_maxiter": false,
+      "success": true,
+      "n_polish_accepted": 1,
+      "elapsed_s": 0.5793122079921886,
+      "kind": "fit",
+      "tag": "qlora_seed221",
+      "variant": "geo",
+      "start": 1
+    },
+    "2": {
+      "loss": 0.5826342091078279,
+      "x": [
+        0.062212902742066,
+        -0.03658882920414343,
+        -7.999995705443093,
+        -1.0197484312583756
+      ],
+      "x0": [
+        -0.3,
+        0.2,
+        -2.5,
+        -1.5
+      ],
+      "runs": [
+        {
+          "stage": "main",
+          "success": true,
+          "loss": 0.5826342115398421,
+          "iterations": 219,
+          "nfev": 373,
+          "message": "Optimization terminated successfully."
+        },
+        {
+          "stage": "polish",
+          "success": true,
+          "loss": 0.5826342091078279,
+          "iterations": 69,
+          "nfev": 124,
+          "message": "Optimization terminated successfully."
+        }
+      ],
+      "nit_total": 288,
+      "nfev_total": 497,
+      "hit_maxiter": false,
+      "success": true,
+      "n_polish_accepted": 1,
+      "elapsed_s": 0.5642724170465954,
+      "kind": "fit",
+      "tag": "qlora_seed221",
+      "variant": "geo",
+      "start": 2
+    },
+    "3": {
+      "loss": 0.5826342090967829,
+      "x": [
+        0.06220261329550725,
+        -0.03657602294884598,
+        -7.999985642387209,
+        -1.0198082706057405
+      ],
+      "x0": [
+        0.0,
+        0.0,
+        -1.0,
+        -3.0
+      ],
+      "runs": [
+        {
+          "stage": "main",
+          "success": true,
+          "loss": 0.5826342091494994,
+          "iterations": 232,
+          "nfev": 392,
+          "message": "Optimization terminated successfully."
+        },
+        {
+          "stage": "polish",
+          "success": true,
+          "loss": 0.5826342090967829,
+          "iterations": 66,
+          "nfev": 122,
+          "message": "Optimization terminated successfully."
+        }
+      ],
+      "nit_total": 298,
+      "nfev_total": 514,
+      "hit_maxiter": false,
+      "success": true,
+      "n_polish_accepted": 1,
+      "elapsed_s": 0.6266889169928618,
+      "kind": "fit",
+      "tag": "qlora_seed221",
+      "variant": "geo",
+      "start": 3
+    },
+    "4": {
+      "loss": 0.5826342090667916,
+      "x": [
+        0.06218553818934055,
+        -0.03657504704689796,
+        -7.999994662485074,
+        -1.019870012424273
+      ],
+      "x0": [
+        0.6,
+        -0.4,
+        -3.0,
+        -1.0
+      ],
+      "runs": [
+        {
+          "stage": "main",
+          "success": true,
+          "loss": 0.5826342090667916,
+          "iterations": 202,
+          "nfev": 346,
+          "message": "Optimization terminated successfully."
+        },
+        {
+          "stage": "polish",
+          "success": true,
+          "loss": 0.5826342090667916,
+          "iterations": 60,
+          "nfev": 114,
+          "message": "Optimization terminated successfully."
+        }
+      ],
+      "nit_total": 262,
+      "nfev_total": 460,
+      "hit_maxiter": false,
+      "success": true,
+      "n_polish_accepted": 0,
+      "elapsed_s": 0.5101548330276273,
+      "kind": "fit",
+      "tag": "qlora_seed221",
+      "variant": "geo",
+      "start": 4
+    },
+    "5": {
+      "loss": 0.5826342090556345,
+      "x": [
+        0.06216939451208968,
+        -0.03657110724538224,
+        -8.0,
+        -1.0198927158654083
+      ],
+      "x0": [
+        0.0,
+        0.0,
+        -8.0,
+        -8.0
+      ],
+      "runs": [
+        {
+          "stage": "main",
+          "success": true,
+          "loss": 0.5826342090556345,
+          "iterations": 331,
+          "nfev": 591,
+          "message": "Optimization terminated successfully."
+        },
+        {
+          "stage": "polish",
+          "success": true,
+          "loss": 0.5826342090556345,
+          "iterations": 62,
+          "nfev": 117,
+          "message": "Optimization terminated successfully."
+        }
+      ],
+      "nit_total": 393,
+      "nfev_total": 708,
+      "hit_maxiter": false,
+      "success": true,
+      "n_polish_accepted": 0,
+      "elapsed_s": 0.9232389579992741,
+      "kind": "fit",
+      "tag": "qlora_seed221",
+      "variant": "geo",
+      "start": 5
+    }
+  },
+  "fallback": {}
+}

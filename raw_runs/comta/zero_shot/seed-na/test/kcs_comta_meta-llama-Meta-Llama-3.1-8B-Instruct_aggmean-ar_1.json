@@ -1,0 +1,368 @@
+{
+  "74": [
+    {
+      "Apply the properties of operations to generate equivalent expressions. For example, apply the distributive property to the expression 3 (2 + x) to produce the equivalent expression 6 + 3x; apply the distributive property to the expression 24x + 18y to produce the equivalent expression 6 (4x + 3y); apply properties of operations to y + y + y to produce the equivalent expression 3y.": 0.56591796875,
+      "Understand solving an equation or inequality as a process of answering a question: which values from a specified set, if any, make the equation or inequality true? Use substitution to determine whether a given number in a specified set makes an equation or inequality true.": 0.32080078125,
+      "Solve real-world and mathematical problems by writing and solving equations of the form x + p = q and px = q for cases in which p, q and x are all nonnegative rational numbers.": 0.49609375,
+      "Solve multi-step real-life and mathematical problems posed with positive and negative rational numbers in any form (whole numbers, fractions, and decimals), using tools strategically. Apply properties of operations to calculate with numbers in any form; convert between forms as appropriate; and assess the reasonableness of answers using mental computation and estimation strategies. For example: If a woman making $25 an hour gets a 10% raise, she will make an additional 1/10 of her salary an hour, or $2.50, for a new salary of $27.50. If you want to place a towel bar 9 3/4 inches long in the center of a door that is 27 1/2 inches wide, you will need to place the bar about 9 inches from each edge; this estimate can be used as a check on the exact computation.": 0.359375,
+      "Solve linear equations and inequalities in one variable, including equations with coefficients represented by letters.": 0.65478515625
+    }
+  ],
+  "110": [
+    {
+      "Prove the addition and subtraction formulas for sine, cosine, and tangent and use them to solve problems.": 0.63720703125,
+      "Use units as a way to understand problems and to guide the solution of multi-step problems; choose and interpret units consistently in formulas; choose and interpret the scale and the origin in graphs and data displays.": 0.020965576171875
+    },
+    {
+      "Prove the addition and subtraction formulas for sine, cosine, and tangent and use them to solve problems.": 0.36669921875,
+      "Use units as a way to understand problems and to guide the solution of multi-step problems; choose and interpret units consistently in formulas; choose and interpret the scale and the origin in graphs and data displays.": 0.0311431884765625
+    },
+    {
+      "Prove the addition and subtraction formulas for sine, cosine, and tangent and use them to solve problems.": 0.23095703125,
+      "Use units as a way to understand problems and to guide the solution of multi-step problems; choose and interpret units consistently in formulas; choose and interpret the scale and the origin in graphs and data displays.": 0.010009765625
+    }
+  ],
+  "79": [
+    {
+      "Prove the Pythagorean identity sin^(2)(\u03b8) + cos^(2)(\u03b8) = 1 and use it to find sin(\u03b8), cos(\u03b8),or tan(\u03b8) given sin(\u03b8), cos(\u03b8), or tan(\u03b8) and the quadrant of the angle.": 0.449462890625
+    },
+    {
+      "Prove the Pythagorean identity sin^(2)(\u03b8) + cos^(2)(\u03b8) = 1 and use it to find sin(\u03b8), cos(\u03b8),or tan(\u03b8) given sin(\u03b8), cos(\u03b8), or tan(\u03b8) and the quadrant of the angle.": 0.3310546875
+    }
+  ],
+  "4": [
+    {
+      "Fluently add and subtract within 1000 using strategies and algorithms based on place value, properties of operations, and/or the relationship between addition and subtraction.": 0.81982421875,
+      "Fluently add and subtract multi-digit whole numbers using the standard algorithm.": 0.72509765625
+    },
+    {
+      "Fluently add and subtract within 1000 using strategies and algorithms based on place value, properties of operations, and/or the relationship between addition and subtraction.": 0.861328125,
+      "Fluently add and subtract multi-digit whole numbers using the standard algorithm.": 0.73095703125
+    }
+  ],
+  "135": [
+    {
+      "Know relative sizes of measurement units within one system of units including km, m, cm; kg, g; lb, oz.; l, ml; hr, min, sec. Within a single system of measurement, express measurements in a larger unit in terms of a smaller unit. Record measurement equivalents in a two column table. For example, know that 1 ft is 12 times as long as 1 in. Express the length of a 4 ft snake as 48 in. Generate a conversion table for feet and inches listing the number pairs (1, 12), (2, 24), (3, 36), ...": 0.388671875,
+      "Convert among different-sized standard measurement units within a given measurement system (e.g., convert 5 cm to 0.05 m), and use these conversions in solving multi-step, real world problems.": 0.414794921875,
+      "Use units as a way to understand problems and to guide the solution of multi-step problems; choose and interpret units consistently in formulas; choose and interpret the scale and the origin in graphs and data displays.": 0.31396484375
+    }
+  ],
+  "15": [
+    {
+      "Interpret products of whole numbers, e.g., interpret 5 \u00d7 7 as the total number of objects in 5 groups of 7 objects each. For example, describe a context in which a total number of objects can be expressed as 5 \u00d7 7.": 0.12249755859375,
+      "Use multiplication and division within 100 to solve word problems in situations involving equal groups, arrays, and measurement quantities, e.g., by using drawings and equations with a symbol for the unknown number to represent the problem.": 0.103759765625
+    },
+    {
+      "Interpret products of whole numbers, e.g., interpret 5 \u00d7 7 as the total number of objects in 5 groups of 7 objects each. For example, describe a context in which a total number of objects can be expressed as 5 \u00d7 7.": 0.105224609375,
+      "Use multiplication and division within 100 to solve word problems in situations involving equal groups, arrays, and measurement quantities, e.g., by using drawings and equations with a symbol for the unknown number to represent the problem.": 0.06756591796875
+    },
+    {
+      "Interpret products of whole numbers, e.g., interpret 5 \u00d7 7 as the total number of objects in 5 groups of 7 objects each. For example, describe a context in which a total number of objects can be expressed as 5 \u00d7 7.": 0.07476806640625,
+      "Use multiplication and division within 100 to solve word problems in situations involving equal groups, arrays, and measurement quantities, e.g., by using drawings and equations with a symbol for the unknown number to represent the problem.": 0.1259765625
+    },
+    {
+      "Choose and produce an equivalent form of an expression to reveal and explain properties of the quantity represented by the expression.": 0.0574951171875
+    },
+    {
+      "Choose and produce an equivalent form of an expression to reveal and explain properties of the quantity represented by the expression.": 0.042083740234375
+    },
+    {
+      "Determine the unknown whole number in a multiplication or division equation relating three whole numbers. For example, determine the unknown number that makes the equation true in each of the equations 8 \u00d7 ? = 48, 5 = \ufffd\ufffd \u00f7 3, 6 \u00d7 6 = ?.": 0.0792236328125,
+      "Choose and produce an equivalent form of an expression to reveal and explain properties of the quantity represented by the expression.": 0.0390625
+    }
+  ],
+  "152": [
+    {
+      "Apply the properties of operations to generate equivalent expressions. For example, apply the distributive property to the expression 3 (2 + x) to produce the equivalent expression 6 + 3x; apply the distributive property to the expression 24x + 18y to produce the equivalent expression 6 (4x + 3y); apply properties of operations to y + y + y to produce the equivalent expression 3y.": 0.34521484375
+    },
+    {
+      "Apply the properties of operations to generate equivalent expressions. For example, apply the distributive property to the expression 3 (2 + x) to produce the equivalent expression 6 + 3x; apply the distributive property to the expression 24x + 18y to produce the equivalent expression 6 (4x + 3y); apply properties of operations to y + y + y to produce the equivalent expression 3y.": 0.3173828125
+    },
+    {
+      "Apply the properties of operations to generate equivalent expressions. For example, apply the distributive property to the expression 3 (2 + x) to produce the equivalent expression 6 + 3x; apply the distributive property to the expression 24x + 18y to produce the equivalent expression 6 (4x + 3y); apply properties of operations to y + y + y to produce the equivalent expression 3y.": 0.449462890625
+    },
+    {
+      "Apply the properties of operations to generate equivalent expressions. For example, apply the distributive property to the expression 3 (2 + x) to produce the equivalent expression 6 + 3x; apply the distributive property to the expression 24x + 18y to produce the equivalent expression 6 (4x + 3y); apply properties of operations to y + y + y to produce the equivalent expression 3y.": 0.1993408203125
+    },
+    {
+      "Apply the properties of operations to generate equivalent expressions. For example, apply the distributive property to the expression 3 (2 + x) to produce the equivalent expression 6 + 3x; apply the distributive property to the expression 24x + 18y to produce the equivalent expression 6 (4x + 3y); apply properties of operations to y + y + y to produce the equivalent expression 3y.": 0.54296875
+    },
+    {
+      "Apply the properties of operations to generate equivalent expressions. For example, apply the distributive property to the expression 3 (2 + x) to produce the equivalent expression 6 + 3x; apply the distributive property to the expression 24x + 18y to produce the equivalent expression 6 (4x + 3y); apply properties of operations to y + y + y to produce the equivalent expression 3y.": 0.16455078125
+    },
+    {
+      "Apply the properties of operations to generate equivalent expressions. For example, apply the distributive property to the expression 3 (2 + x) to produce the equivalent expression 6 + 3x; apply the distributive property to the expression 24x + 18y to produce the equivalent expression 6 (4x + 3y); apply properties of operations to y + y + y to produce the equivalent expression 3y.": 0.10968017578125
+    },
+    {
+      "Apply the properties of operations to generate equivalent expressions. For example, apply the distributive property to the expression 3 (2 + x) to produce the equivalent expression 6 + 3x; apply the distributive property to the expression 24x + 18y to produce the equivalent expression 6 (4x + 3y); apply properties of operations to y + y + y to produce the equivalent expression 3y.": 0.106689453125
+    },
+    {
+      "Apply the properties of operations to generate equivalent expressions. For example, apply the distributive property to the expression 3 (2 + x) to produce the equivalent expression 6 + 3x; apply the distributive property to the expression 24x + 18y to produce the equivalent expression 6 (4x + 3y); apply properties of operations to y + y + y to produce the equivalent expression 3y.": 0.23095703125
+    },
+    {
+      "Apply the properties of operations to generate equivalent expressions. For example, apply the distributive property to the expression 3 (2 + x) to produce the equivalent expression 6 + 3x; apply the distributive property to the expression 24x + 18y to produce the equivalent expression 6 (4x + 3y); apply properties of operations to y + y + y to produce the equivalent expression 3y.": 0.3173828125
+    },
+    {
+      "Solve real-world and mathematical problems by writing and solving equations of the form x + p = q and px = q for cases in which p, q and x are all nonnegative rational numbers.": 0.1710205078125,
+      "Solve linear equations and inequalities in one variable, including equations with coefficients represented by letters.": 0.52734375
+    },
+    {
+      "Solve real-world and mathematical problems by writing and solving equations of the form x + p = q and px = q for cases in which p, q and x are all nonnegative rational numbers.": 0.2421875,
+      "Solve linear equations and inequalities in one variable, including equations with coefficients represented by letters.": 0.4765625
+    },
+    {
+      "Understand a fraction 1/b as the quantity formed by 1 part when a whole is partitioned into b equal parts; understand a fraction a/b as the quantity formed by a parts of size 1/b.": 0.06951904296875
+    },
+    {
+      "Understand a fraction 1/b as the quantity formed by 1 part when a whole is partitioned into b equal parts; understand a fraction a/b as the quantity formed by a parts of size 1/b.": 0.0618896484375
+    }
+  ],
+  "27": [
+    {
+      "Recognize and represent proportional relationships between quantities.": 0.248046875,
+      "Find the point on a directed line segment between two given points that partitions the segment in a given ratio.": 0.607421875
+    }
+  ],
+  "54": [
+    {
+      "Interpret products of whole numbers, e.g., interpret 5 \u00d7 7 as the total number of objects in 5 groups of 7 objects each. For example, describe a context in which a total number of objects can be expressed as 5 \u00d7 7.": 0.08270263671875,
+      "Use multiplication and division within 100 to solve word problems in situations involving equal groups, arrays, and measurement quantities, e.g., by using drawings and equations with a symbol for the unknown number to represent the problem.": 0.19189453125,
+      "Fluently multiply and divide within 100, using strategies such as the relationship between multiplication and division (e.g., knowing that 8 \u00d7 5 = 40, one knows 40 \u00f7 5 = 8) or properties of operations. By the end of Grade 3, know from memory all products of two one-digit numbers.": 0.4609375
+    }
+  ],
+  "3": [
+    {
+      "Apply and extend previous understandings of division to divide unit fractions by whole numbers and whole numbers by unit fractions. (Students able to multiply fractions in general can develop strategies to divide fractions in general, by reasoning about the relationship between multiplication and division. But division of a fraction by a fraction is not a requirement at this grade.)": 0.43408203125
+    },
+    {
+      "Apply and extend previous understandings of multiplication to multiply a fraction or whole number by a fraction.": 0.67919921875
+    }
+  ],
+  "26": [
+    {
+      "Understand that by similarity, side ratios in right triangles are properties of the angles in the triangle, leading to definitions of trigonometric ratios for acute angles.": 0.359375,
+      "Use trigonometric ratios and the Pythagorean Theorem to solve right triangles in applied problems.": 0.83544921875
+    }
+  ],
+  "116": [
+    {
+      "Graph functions expressed symbolically and show key features of the graph, by hand in simple cases and using technology for more complicated cases.": 0.751953125,
+      "Choose trigonometric functions to model periodic phenomena with specified amplitude, frequency, and midline.": 0.67578125
+    },
+    {
+      "Graph functions expressed symbolically and show key features of the graph, by hand in simple cases and using technology for more complicated cases.": 0.6826171875,
+      "Choose trigonometric functions to model periodic phenomena with specified amplitude, frequency, and midline.": 0.43017578125
+    },
+    {
+      "Graph functions expressed symbolically and show key features of the graph, by hand in simple cases and using technology for more complicated cases.": 0.7958984375,
+      "Choose trigonometric functions to model periodic phenomena with specified amplitude, frequency, and midline.": 0.4765625
+    },
+    {
+      "Graph functions expressed symbolically and show key features of the graph, by hand in simple cases and using technology for more complicated cases.": 0.77978515625,
+      "Choose trigonometric functions to model periodic phenomena with specified amplitude, frequency, and midline.": 0.55810546875
+    },
+    {
+      "Graph functions expressed symbolically and show key features of the graph, by hand in simple cases and using technology for more complicated cases.": 0.76611328125,
+      "Choose trigonometric functions to model periodic phenomena with specified amplitude, frequency, and midline.": 0.5849609375
+    }
+  ],
+  "107": [
+    {
+      "Know the formulas for the area and circumference of a circle and use them to solve problems; give an informal derivation of the relationship between the circumference and area of a circle.": 0.484375
+    },
+    {
+      "Know the formulas for the area and circumference of a circle and use them to solve problems; give an informal derivation of the relationship between the circumference and area of a circle.": 0.59619140625
+    },
+    {
+      "Know relative sizes of measurement units within one system of units including km, m, cm; kg, g; lb, oz.; l, ml; hr, min, sec. Within a single system of measurement, express measurements in a larger unit in terms of a smaller unit. Record measurement equivalents in a two column table. For example, know that 1 ft is 12 times as long as 1 in. Express the length of a 4 ft snake as 48 in. Generate a conversion table for feet and inches listing the number pairs (1, 12), (2, 24), (3, 36), ...": 0.414794921875,
+      "Convert among different-sized standard measurement units within a given measurement system (e.g., convert 5 cm to 0.05 m), and use these conversions in solving multi-step, real world problems.": 0.87060546875
+    },
+    {
+      "Know the formulas for the area and circumference of a circle and use them to solve problems; give an informal derivation of the relationship between the circumference and area of a circle.": 0.61865234375
+    },
+    {
+      "Know the formulas for the area and circumference of a circle and use them to solve problems; give an informal derivation of the relationship between the circumference and area of a circle.": 0.64404296875
+    },
+    {
+      "Use the four operations to solve word problems involving distances, intervals of time, liquid volumes, masses of objects, and money, including problems involving simple fractions or decimals, and problems that require expressing measurements given in a larger unit in terms of a smaller unit. Represent measurement quantities using diagrams such as number line diagrams that feature a measurement scale.": 0.54296875,
+      "Convert among different-sized standard measurement units within a given measurement system (e.g., convert 5 cm to 0.05 m), and use these conversions in solving multi-step, real world problems.": 0.9072265625,
+      "Solve real-world and mathematical problems involving area, volume and surface area of two- and three-dimensional objects composed of triangles, quadrilaterals, polygons, cubes, and right prisms.": 0.689453125
+    }
+  ],
+  "95": [
+    {
+      "Write, read, and evaluate expressions in which letters stand for numbers.": 0.437744140625,
+      "Explain a proof of the Pythagorean Theorem and its converse.": 0.015899658203125
+    },
+    {
+      "Apply the Pythagorean Theorem to determine unknown side lengths in right triangles in real-world and mathematical problems in two and three dimensions.": 0.20947265625,
+      "Use geometric shapes, their measures, and their properties to describe objects (e.g., modeling a tree trunk or a human torso as a cylinder).": 0.06756591796875
+    },
+    {
+      "Write, read, and evaluate expressions in which letters stand for numbers.": 0.7431640625,
+      "Apply the Pythagorean Theorem to determine unknown side lengths in right triangles in real-world and mathematical problems in two and three dimensions.": 0.63330078125
+    },
+    {
+      "Write and evaluate numerical expressions involving whole-number exponents.": 0.65478515625
+    },
+    {
+      "Solve multi-step real-life and mathematical problems posed with positive and negative rational numbers in any form (whole numbers, fractions, and decimals), using tools strategically. Apply properties of operations to calculate with numbers in any form; convert between forms as appropriate; and assess the reasonableness of answers using mental computation and estimation strategies. For example: If a woman making $25 an hour gets a 10% raise, she will make an additional 1/10 of her salary an hour, or $2.50, for a new salary of $27.50. If you want to place a towel bar 9 3/4 inches long in the center of a door that is 27 1/2 inches wide, you will need to place the bar about 9 inches from each edge; this estimate can be used as a check on the exact computation.": 0.29736328125
+    },
+    {
+      "Use square root and cube root symbols to represent solutions to equations of the form x^(2) = p and x^(3) = p, where p is a positive rational number. Evaluate square roots of small perfect squares and cube roots of small perfect cubes. Know that \u00d62 is irrational.": 0.607421875
+    }
+  ],
+  "62": [
+    {
+      "Understand that polynomials form a system analogous to the integers, namely, they are closed under the operations of addition, subtraction, and multiplication; add, subtract, and multiply polynomials.": 0.2017822265625
+    }
+  ],
+  "103": [
+    {
+      "Use similar triangles to explain why the slope m is the same between any two distinct points on a non-vertical line in the coordinate plane; derive the equation y = mx for a line through the origin and the equation y = mx + b for a line intercepting the vertical axis at b.": 0.11279296875
+    },
+    {
+      "Apply properties of operations as strategies to add, subtract, factor, and expand linear expressions with rational coefficients.": 0.341552734375,
+      "Understand that rewriting an expression in different forms in a problem context can shed light on the problem and how the quantities in it are related. For example, a + 0.05a = 1.05a means that \u201cincrease by 5%\u201d is the same as \u201cmultiply by 1.05.\u201d": 0.291015625,
+      "Use similar triangles to explain why the slope m is the same between any two distinct points on a non-vertical line in the coordinate plane; derive the equation y = mx for a line through the origin and the equation y = mx + b for a line intercepting the vertical axis at b.": 0.034088134765625
+    },
+    {
+      "Apply properties of operations as strategies to add, subtract, factor, and expand linear expressions with rational coefficients.": 0.6513671875,
+      "Understand that rewriting an expression in different forms in a problem context can shed light on the problem and how the quantities in it are related. For example, a + 0.05a = 1.05a means that \u201cincrease by 5%\u201d is the same as \u201cmultiply by 1.05.\u201d": 0.3310546875,
+      "Use similar triangles to explain why the slope m is the same between any two distinct points on a non-vertical line in the coordinate plane; derive the equation y = mx for a line through the origin and the equation y = mx + b for a line intercepting the vertical axis at b.": 0.09271240234375
+    },
+    {
+      "Apply properties of operations as strategies to add, subtract, factor, and expand linear expressions with rational coefficients.": 0.46875,
+      "Understand that rewriting an expression in different forms in a problem context can shed light on the problem and how the quantities in it are related. For example, a + 0.05a = 1.05a means that \u201cincrease by 5%\u201d is the same as \u201cmultiply by 1.05.\u201d": 0.3701171875,
+      "Use similar triangles to explain why the slope m is the same between any two distinct points on a non-vertical line in the coordinate plane; derive the equation y = mx for a line through the origin and the equation y = mx + b for a line intercepting the vertical axis at b.": 0.1480712890625
+    },
+    {
+      "Apply properties of operations as strategies to add, subtract, factor, and expand linear expressions with rational coefficients.": 0.341552734375,
+      "Understand that rewriting an expression in different forms in a problem context can shed light on the problem and how the quantities in it are related. For example, a + 0.05a = 1.05a means that \u201cincrease by 5%\u201d is the same as \u201cmultiply by 1.05.\u201d": 0.281494140625,
+      "Use similar triangles to explain why the slope m is the same between any two distinct points on a non-vertical line in the coordinate plane; derive the equation y = mx for a line through the origin and the equation y = mx + b for a line intercepting the vertical axis at b.": 0.115966796875
+    },
+    {
+      "Apply properties of operations as strategies to add, subtract, factor, and expand linear expressions with rational coefficients.": 0.615234375,
+      "Understand that rewriting an expression in different forms in a problem context can shed light on the problem and how the quantities in it are related. For example, a + 0.05a = 1.05a means that \u201cincrease by 5%\u201d is the same as \u201cmultiply by 1.05.\u201d": 0.5849609375,
+      "Use similar triangles to explain why the slope m is the same between any two distinct points on a non-vertical line in the coordinate plane; derive the equation y = mx for a line through the origin and the equation y = mx + b for a line intercepting the vertical axis at b.": 0.2017822265625
+    }
+  ],
+  "117": [
+    {
+      "Prove the Pythagorean identity sin^(2)(\u03b8) + cos^(2)(\u03b8) = 1 and use it to find sin(\u03b8), cos(\u03b8),or tan(\u03b8) given sin(\u03b8), cos(\u03b8), or tan(\u03b8) and the quadrant of the angle.": 0.0966796875
+    },
+    {
+      "Prove the Pythagorean identity sin^(2)(\u03b8) + cos^(2)(\u03b8) = 1 and use it to find sin(\u03b8), cos(\u03b8),or tan(\u03b8) given sin(\u03b8), cos(\u03b8), or tan(\u03b8) and the quadrant of the angle.": 0.0574951171875
+    },
+    {
+      "Prove the Pythagorean identity sin^(2)(\u03b8) + cos^(2)(\u03b8) = 1 and use it to find sin(\u03b8), cos(\u03b8),or tan(\u03b8) given sin(\u03b8), cos(\u03b8), or tan(\u03b8) and the quadrant of the angle.": 0.12249755859375
+    }
+  ],
+  "137": [
+    {
+      "Understand solving an equation or inequality as a process of answering a question: which values from a specified set, if any, make the equation or inequality true? Use substitution to determine whether a given number in a specified set makes an equation or inequality true.": 0.0726318359375,
+      "Use variables to represent numbers and write expressions when solving a real-world or mathematical problem; understand that a variable can represent an unknown number, or, depending on the purpose at hand, any number in a specified set.": 0.1480712890625,
+      "Use variables to represent quantities in a real-world or mathematical problem, and construct simple equations and inequalities to solve problems by reasoning about the quantities.": 0.0994873046875,
+      "Solve linear equations and inequalities in one variable, including equations with coefficients represented by letters.": 0.1710205078125
+    },
+    {
+      "Understand solving an equation or inequality as a process of answering a question: which values from a specified set, if any, make the equation or inequality true? Use substitution to determine whether a given number in a specified set makes an equation or inequality true.": 0.12939453125,
+      "Use variables to represent numbers and write expressions when solving a real-world or mathematical problem; understand that a variable can represent an unknown number, or, depending on the purpose at hand, any number in a specified set.": 0.441650390625,
+      "Use variables to represent quantities in a real-world or mathematical problem, and construct simple equations and inequalities to solve problems by reasoning about the quantities.": 0.275146484375,
+      "Solve linear equations and inequalities in one variable, including equations with coefficients represented by letters.": 0.449462890625
+    },
+    {
+      "Understand solving an equation or inequality as a process of answering a question: which values from a specified set, if any, make the equation or inequality true? Use substitution to determine whether a given number in a specified set makes an equation or inequality true.": 0.29736328125,
+      "Use variables to represent numbers and write expressions when solving a real-world or mathematical problem; understand that a variable can represent an unknown number, or, depending on the purpose at hand, any number in a specified set.": 0.56591796875,
+      "Use variables to represent quantities in a real-world or mathematical problem, and construct simple equations and inequalities to solve problems by reasoning about the quantities.": 0.4921875,
+      "Solve linear equations and inequalities in one variable, including equations with coefficients represented by letters.": 0.69921875
+    },
+    {
+      "Understand solving an equation or inequality as a process of answering a question: which values from a specified set, if any, make the equation or inequality true? Use substitution to determine whether a given number in a specified set makes an equation or inequality true.": 0.2783203125,
+      "Use variables to represent numbers and write expressions when solving a real-world or mathematical problem; understand that a variable can represent an unknown number, or, depending on the purpose at hand, any number in a specified set.": 0.58154296875,
+      "Use variables to represent quantities in a real-world or mathematical problem, and construct simple equations and inequalities to solve problems by reasoning about the quantities.": 0.5888671875,
+      "Solve linear equations and inequalities in one variable, including equations with coefficients represented by letters.": 0.8154296875
+    },
+    {
+      "Understand solving an equation or inequality as a process of answering a question: which values from a specified set, if any, make the equation or inequality true? Use substitution to determine whether a given number in a specified set makes an equation or inequality true.": 0.0953369140625,
+      "Use variables to represent numbers and write expressions when solving a real-world or mathematical problem; understand that a variable can represent an unknown number, or, depending on the purpose at hand, any number in a specified set.": 0.341552734375,
+      "Use variables to represent quantities in a real-world or mathematical problem, and construct simple equations and inequalities to solve problems by reasoning about the quantities.": 0.338134765625,
+      "Solve linear equations and inequalities in one variable, including equations with coefficients represented by letters.": 0.6259765625
+    },
+    {
+      "Understand solving an equation or inequality as a process of answering a question: which values from a specified set, if any, make the equation or inequality true? Use substitution to determine whether a given number in a specified set makes an equation or inequality true.": 0.08270263671875,
+      "Use variables to represent numbers and write expressions when solving a real-world or mathematical problem; understand that a variable can represent an unknown number, or, depending on the purpose at hand, any number in a specified set.": 0.385009765625,
+      "Use variables to represent quantities in a real-world or mathematical problem, and construct simple equations and inequalities to solve problems by reasoning about the quantities.": 0.363037109375,
+      "Solve linear equations and inequalities in one variable, including equations with coefficients represented by letters.": 0.56982421875
+    },
+    {
+      "Understand solving an equation or inequality as a process of answering a question: which values from a specified set, if any, make the equation or inequality true? Use substitution to determine whether a given number in a specified set makes an equation or inequality true.": 0.070556640625,
+      "Use variables to represent numbers and write expressions when solving a real-world or mathematical problem; understand that a variable can represent an unknown number, or, depending on the purpose at hand, any number in a specified set.": 0.259765625,
+      "Use variables to represent quantities in a real-world or mathematical problem, and construct simple equations and inequalities to solve problems by reasoning about the quantities.": 0.34521484375,
+      "Solve linear equations and inequalities in one variable, including equations with coefficients represented by letters.": 0.55078125
+    },
+    {
+      "Understand solving an equation or inequality as a process of answering a question: which values from a specified set, if any, make the equation or inequality true? Use substitution to determine whether a given number in a specified set makes an equation or inequality true.": 0.1519775390625,
+      "Use variables to represent numbers and write expressions when solving a real-world or mathematical problem; understand that a variable can represent an unknown number, or, depending on the purpose at hand, any number in a specified set.": 0.39990234375,
+      "Use variables to represent quantities in a real-world or mathematical problem, and construct simple equations and inequalities to solve problems by reasoning about the quantities.": 0.48046875,
+      "Solve linear equations and inequalities in one variable, including equations with coefficients represented by letters.": 0.5927734375
+    },
+    {
+      "Understand solving an equation or inequality as a process of answering a question: which values from a specified set, if any, make the equation or inequality true? Use substitution to determine whether a given number in a specified set makes an equation or inequality true.": 0.1312255859375,
+      "Use variables to represent numbers and write expressions when solving a real-world or mathematical problem; understand that a variable can represent an unknown number, or, depending on the purpose at hand, any number in a specified set.": 0.32763671875,
+      "Use variables to represent quantities in a real-world or mathematical problem, and construct simple equations and inequalities to solve problems by reasoning about the quantities.": 0.441650390625,
+      "Solve linear equations and inequalities in one variable, including equations with coefficients represented by letters.": 0.64794921875
+    },
+    {
+      "Understand solving an equation or inequality as a process of answering a question: which values from a specified set, if any, make the equation or inequality true? Use substitution to determine whether a given number in a specified set makes an equation or inequality true.": 0.154052734375,
+      "Use variables to represent numbers and write expressions when solving a real-world or mathematical problem; understand that a variable can represent an unknown number, or, depending on the purpose at hand, any number in a specified set.": 0.48046875,
+      "Use variables to represent quantities in a real-world or mathematical problem, and construct simple equations and inequalities to solve problems by reasoning about the quantities.": 0.56982421875,
+      "Solve linear equations and inequalities in one variable, including equations with coefficients represented by letters.": 0.80078125
+    },
+    {
+      "Understand solving an equation or inequality as a process of answering a question: which values from a specified set, if any, make the equation or inequality true? Use substitution to determine whether a given number in a specified set makes an equation or inequality true.": 0.1441650390625,
+      "Use variables to represent numbers and write expressions when solving a real-world or mathematical problem; understand that a variable can represent an unknown number, or, depending on the purpose at hand, any number in a specified set.": 0.437744140625,
+      "Use variables to represent quantities in a real-world or mathematical problem, and construct simple equations and inequalities to solve problems by reasoning about the quantities.": 0.515625,
+      "Solve linear equations and inequalities in one variable, including equations with coefficients represented by letters.": 0.76611328125
+    },
+    {
+      "Understand solving an equation or inequality as a process of answering a question: which values from a specified set, if any, make the equation or inequality true? Use substitution to determine whether a given number in a specified set makes an equation or inequality true.": 0.25390625,
+      "Use variables to represent numbers and write expressions when solving a real-world or mathematical problem; understand that a variable can represent an unknown number, or, depending on the purpose at hand, any number in a specified set.": 0.56201171875,
+      "Use variables to represent quantities in a real-world or mathematical problem, and construct simple equations and inequalities to solve problems by reasoning about the quantities.": 0.5078125,
+      "Solve linear equations and inequalities in one variable, including equations with coefficients represented by letters.": 0.751953125
+    },
+    {
+      "Understand solving an equation or inequality as a process of answering a question: which values from a specified set, if any, make the equation or inequality true? Use substitution to determine whether a given number in a specified set makes an equation or inequality true.": 0.12939453125,
+      "Use variables to represent numbers and write expressions when solving a real-world or mathematical problem; understand that a variable can represent an unknown number, or, depending on the purpose at hand, any number in a specified set.": 0.392333984375,
+      "Use variables to represent quantities in a real-world or mathematical problem, and construct simple equations and inequalities to solve problems by reasoning about the quantities.": 0.48046875,
+      "Solve linear equations and inequalities in one variable, including equations with coefficients represented by letters.": 0.7216796875
+    },
+    {
+      "Understand solving an equation or inequality as a process of answering a question: which values from a specified set, if any, make the equation or inequality true? Use substitution to determine whether a given number in a specified set makes an equation or inequality true.": 0.2069091796875,
+      "Use variables to represent numbers and write expressions when solving a real-world or mathematical problem; understand that a variable can represent an unknown number, or, depending on the purpose at hand, any number in a specified set.": 0.4111328125,
+      "Use variables to represent quantities in a real-world or mathematical problem, and construct simple equations and inequalities to solve problems by reasoning about the quantities.": 0.4921875,
+      "Solve linear equations and inequalities in one variable, including equations with coefficients represented by letters.": 0.841796875
+    },
+    {
+      "Understand solving an equation or inequality as a process of answering a question: which values from a specified set, if any, make the equation or inequality true? Use substitution to determine whether a given number in a specified set makes an equation or inequality true.": 0.388671875,
+      "Use variables to represent numbers and write expressions when solving a real-world or mathematical problem; understand that a variable can represent an unknown number, or, depending on the purpose at hand, any number in a specified set.": 0.64794921875,
+      "Use variables to represent quantities in a real-world or mathematical problem, and construct simple equations and inequalities to solve problems by reasoning about the quantities.": 0.71533203125,
+      "Solve linear equations and inequalities in one variable, including equations with coefficients represented by letters.": 0.88720703125
+    }
+  ],
+  "76": [
+    {
+      "Interpret expressions that represent a quantity in terms of its context.": 0.2069091796875,
+      "Use the structure of an expression to identify ways to rewrite it. For example, see x^(4) \u2013 y^(4 )as (x^(2))^(2 )\u2013 (y^(2))^(2), thus recognizing it as a difference of squares that can be factored as (x^(2 )\u2013 y^(2))(x^(2 )+ y^(2)).": 0.47265625,
+      "Prove the Pythagorean identity sin^(2)(\u03b8) + cos^(2)(\u03b8) = 1 and use it to find sin(\u03b8), cos(\u03b8),or tan(\u03b8) given sin(\u03b8), cos(\u03b8), or tan(\u03b8) and the quadrant of the angle.": 0.00955963134765625,
+      "Prove the addition and subtraction formulas for sine, cosine, and tangent and use them to solve problems.": 0.1800537109375
+    },
+    {
+      "Apply properties of operations as strategies to add, subtract, factor, and expand linear expressions with rational coefficients.": 0.22265625,
+      "Understand that rewriting an expression in different forms in a problem context can shed light on the problem and how the quantities in it are related. For example, a + 0.05a = 1.05a means that \u201cincrease by 5%\u201d is the same as \u201cmultiply by 1.05.\u201d": 0.262939453125,
+      "Solve linear equations and inequalities in one variable, including equations with coefficients represented by letters.": 0.310791015625,
+      "Interpret expressions that represent a quantity in terms of its context.": 0.162353515625,
+      "Use the structure of an expression to identify ways to rewrite it. For example, see x^(4) \u2013 y^(4 )as (x^(2))^(2 )\u2013 (y^(2))^(2), thus recognizing it as a difference of squares that can be factored as (x^(2 )\u2013 y^(2))(x^(2 )+ y^(2)).": 0.294189453125
+    }
+  ]
+}

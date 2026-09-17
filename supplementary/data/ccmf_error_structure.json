@@ -1,0 +1,18 @@
+{
+ "brier": 0.21025746609057075,
+ "bernoulli_var": 0.20653053502017232,
+ "sigma_hat": 0.06104859597401423,
+ "estimate_lag1_autocorr": 0.32982655458635185,
+ "lambda": 0.9041773762692995,
+ "m0": 0.9996646498687217,
+ "p_learn": 0.0003353501304664781,
+ "first_prior": 0.999664762328432,
+ "first_shrink_weight": 0.0958226237307005,
+ "error_persistence_coef": 0.0958226237307005,
+ "n_kc_series": 1882,
+ "n_single_observation_series": 805,
+ "single_observation_share": 0.4277364505844846,
+ "mean_first_estimate": 0.4794588633364648,
+ "mean_later_estimate": 0.35809440385163144,
+ "at_bound_flags": "{\"r_a\": false, \"r_b\": false, \"r_lambda\": false, \"r_pL\": true, \"r_m0\": true, \"r_s\": true, \"r_g\": false}"
+}

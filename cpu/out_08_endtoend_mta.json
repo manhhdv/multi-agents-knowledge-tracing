@@ -1,16 +1,16 @@
 {
  "n_turns": 1985,
  "tau": 0.8,
- "kc_covered_by_graph": 0.8672100486312337,
+ "kc_covered_by_graph": 0.9183407511221379,
  "rule_share": {
-  "commit": 0.6090680100755668,
-  "advance_fallback": 0.17329974811083124,
+  "commit": 0.6085642317380353,
+  "advance_fallback": 0.21309823677581863,
   "maintain": 0.07959697732997481,
-  "advance_ready": 0.07858942065491184,
-  "none": 0.059445843828715365
+  "none": 0.059445843828715365,
+  "advance_ready": 0.03929471032745592
  },
- "share_choice_differs_from_empty_graph": 0.4226700251889169,
- "mean_ready_set_size": 0.4025188916876574,
- "share_turns_with_nonempty_ready_set": 0.32292191435768264,
+ "share_choice_differs_from_empty_graph": 0.3959697732997481,
+ "mean_ready_set_size": 0.23173803526448364,
+ "share_turns_with_nonempty_ready_set": 0.18387909319899245,
  "mean_mastered_kcs_at_turn": 0.4926952141057935
 }

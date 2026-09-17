@@ -1,0 +1,793 @@
+{
+  "timestamp": "2026-09-13T19:32:38+00:00",
+  "preregistration_sha256": "e17bd98c086a3e1bffe1fe0b44d38a95d83dec9de8931677989b91677e71d063",
+  "variants": [
+    {
+      "id": "geo",
+      "family": "F1 (mandatory): geometric mean of Platt-calibrated per-KC probabilities, then slip/guess (stateless)",
+      "formula": "z_jk = sigmoid(a*d_jk + b); P_j = (prod_{k in C_j} z_jk)^(1/n_j) = exp((1/n_j) * sum_k log z_jk) with log z = -logaddexp(0, -(a*d+b)); yhat_j = (1-s)*P_j + g*(1-P_j); clip to [1e-6, 1-1e-6]; transforms via unpack_ccmf([r_a, r_b, 0,0,0,0, r_s, r_g]): a = exp(clip(r_a,-3,3)), b = 4*tanh(r_b), s = 0.49*expit(r_s), g = 0.49*expit(r_g); raw box r_a in [-3,3], r_b in [-3,3], r_s, r_g in [-8,8]",
+      "params": [
+        "a",
+        "b",
+        "s",
+        "g"
+      ],
+      "label_update_modes": [
+        "none"
+      ],
+      "auc_parameter_free": false
+    },
+    {
+      "id": "min",
+      "family": "F2 (mandatory): weakest KC (min over KCs of Platt-calibrated probabilities), then slip/guess (stateless)",
+      "formula": "P_j = min_k sigmoid(a*d_jk + b) = sigmoid(a * min_k d_jk + b) (a > 0); yhat_j = (1-s)*P_j + g*(1-P_j); clip to [1e-6, 1-1e-6]; same transforms and raw box as geo; script asserts AUC(yhat_min) == AUC(min_k d_jk) to 1e-12 on val and test",
+      "params": [
+        "a",
+        "b",
+        "s",
+        "g"
+      ],
+      "label_update_modes": [
+        "none"
+      ],
+      "auc_parameter_free": true
+    },
+    {
+      "id": "mean_bkt",
+      "family": "F3 (mandatory): BKT-style temporal filter (Eq. 2) + label update (Eq. 4) with the MEAN over the turn's KCs replacing the product in Eq. 3, then slip/guess",
+      "formula": "for k in C_j (m_k init m0 at first occurrence in the dialogue; state reset at dialogue change): prior_k = m_k + (1-m_k)*p_L; m~_k = (1-lambda)*prior_k + lambda*sigmoid(a*d_jk + b); P_j = (1/n_j) * sum_{k in C_j} m~_k; yhat_j = (1-s)*P_j + g*(1-P_j); after yhat_j is recorded: m_k <- m~_k if u_j is None else (1-mu)*m~_k + mu*u_j (ccmf_commit), u_j = None (none) | unclipped yhat_j (model) | SAVA verdict correct=1/incorrect=0/undetermined=None (sava) | y_j (gold); clip to [1e-6, 1-1e-6]; transforms = unpack_ccmf verbatim on [r_a, r_b, r_lambda, r_mu, r_pL, r_m0, r_s, r_g]; raw box r_a, r_b in [-3,3], others in [-8,8]; in mode none r_mu is fixed at 0 and removed from the optimised vector (7 free)",
+      "params": [
+        "a",
+        "b",
+        "lambda",
+        "mu",
+        "p_L",
+        "m0",
+        "s",
+        "g"
+      ],
+      "label_update_modes": [
+        "none",
+        "model",
+        "sava",
+        "gold"
+      ],
+      "auc_parameter_free": false
+    },
+    {
+      "id": "tempered_and",
+      "family": "F4 (single extra family, justified by two proposals from the double-counting diagnosis; diagnostic candidate excluded from the primary set): tempered conjunction nesting the noisy-AND (gamma=0) and geo (gamma=1)",
+      "formula": "log P_j = n_j^(-gamma) * sum_{k in C_j} log sigmoid(a*d_jk + b), i.e. P_j = (prod_k z_jk)^(n_j^-gamma); yhat_j = (1-s)*P_j + g*(1-P_j); clip to [1e-6, 1-1e-6]; gamma = expit(r_gamma) in (0,1), r_gamma in [-8,8]; a, b, s, g as in geo; raw order [r_a, r_b, r_gamma, r_s, r_g]; validation-only gamma profile at gamma in {0, 0.25, 0.5, 0.75, 1} with (a,b,s,g) refit",
+      "params": [
+        "a",
+        "b",
+        "gamma",
+        "s",
+        "g"
+      ],
+      "label_update_modes": [
+        "none"
+      ],
+      "auc_parameter_free": false
+    }
+  ],
+  "fit_variants": [
+    {
+      "name": "geo",
+      "family": "geo",
+      "mode": "none",
+      "k_free": 4,
+      "free_names": [
+        "r_a",
+        "r_b",
+        "r_s",
+        "r_g"
+      ],
+      "box_lo": [
+        -3.0,
+        -3.0,
+        -8.0,
+        -8.0
+      ],
+      "box_hi": [
+        3.0,
+        3.0,
+        8.0,
+        8.0
+      ],
+      "starts": [
+        [
+          0.0,
+          0.0,
+          -2.0,
+          -2.0
+        ],
+        [
+          0.3,
+          -0.2,
+          -1.5,
+          -2.5
+        ],
+        [
+          -0.3,
+          0.2,
+          -2.5,
+          -1.5
+        ],
+        [
+          0.0,
+          0.0,
+          -1.0,
+          -3.0
+        ],
+        [
+          0.6,
+          -0.4,
+          -3.0,
+          -1.0
+        ],
+        [
+          0.0,
+          0.0,
+          -8.0,
+          -8.0
+        ]
+      ]
+    },
+    {
+      "name": "min",
+      "family": "min",
+      "mode": "none",
+      "k_free": 4,
+      "free_names": [
+        "r_a",
+        "r_b",
+        "r_s",
+        "r_g"
+      ],
+      "box_lo": [
+        -3.0,
+        -3.0,
+        -8.0,
+        -8.0
+      ],
+      "box_hi": [
+        3.0,
+        3.0,
+        8.0,
+        8.0
+      ],
+      "starts": [
+        [
+          0.0,
+          0.0,
+          -2.0,
+          -2.0
+        ],
+        [
+          0.3,
+          -0.2,
+          -1.5,
+          -2.5
+        ],
+        [
+          -0.3,
+          0.2,
+          -2.5,
+          -1.5
+        ],
+        [
+          0.0,
+          0.0,
+          -1.0,
+          -3.0
+        ],
+        [
+          0.6,
+          -0.4,
+          -3.0,
+          -1.0
+        ],
+        [
+          0.0,
+          0.0,
+          -8.0,
+          -8.0
+        ]
+      ]
+    },
+    {
+      "name": "tempered_and",
+      "family": "tempered_and",
+      "mode": "none",
+      "k_free": 5,
+      "free_names": [
+        "r_a",
+        "r_b",
+        "r_gamma",
+        "r_s",
+        "r_g"
+      ],
+      "box_lo": [
+        -3.0,
+        -3.0,
+        -8.0,
+        -8.0,
+        -8.0
+      ],
+      "box_hi": [
+        3.0,
+        3.0,
+        8.0,
+        8.0,
+        8.0
+      ],
+      "starts": [
+        [
+          0.0,
+          0.0,
+          0.0,
+          -2.0,
+          -2.0
+        ],
+        [
+          0.3,
+          -0.2,
+          0.0,
+          -1.5,
+          -2.5
+        ],
+        [
+          -0.3,
+          0.2,
+          0.0,
+          -2.5,
+          -1.5
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          -1.0,
+          -3.0
+        ],
+        [
+          0.6,
+          -0.4,
+          0.0,
+          -3.0,
+          -1.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          -8.0,
+          -8.0
+        ],
+        [
+          0.0,
+          0.0,
+          -4.0,
+          -2.0,
+          -2.0
+        ],
+        [
+          0.0,
+          0.0,
+          4.0,
+          -2.0,
+          -2.0
+        ]
+      ]
+    },
+    {
+      "name": "mean_bkt_none",
+      "family": "mean_bkt",
+      "mode": "none",
+      "k_free": 7,
+      "free_names": [
+        "r_a",
+        "r_b",
+        "r_lambda",
+        "r_pL",
+        "r_m0",
+        "r_s",
+        "r_g"
+      ],
+      "box_lo": [
+        -3.0,
+        -3.0,
+        -8.0,
+        -8.0,
+        -8.0,
+        -8.0,
+        -8.0
+      ],
+      "box_hi": [
+        3.0,
+        3.0,
+        8.0,
+        8.0,
+        8.0,
+        8.0,
+        8.0
+      ],
+      "starts": [
+        [
+          0.0,
+          0.0,
+          0.0,
+          -3.0,
+          -0.4,
+          -2.0,
+          -2.0
+        ],
+        [
+          0.3,
+          -0.2,
+          -0.5,
+          -2.5,
+          0.0,
+          -1.5,
+          -2.5
+        ],
+        [
+          -0.3,
+          0.2,
+          0.5,
+          -3.5,
+          -1.0,
+          -2.5,
+          -1.5
+        ],
+        [
+          0.0,
+          0.0,
+          -1.0,
+          -2.0,
+          -0.8,
+          -1.0,
+          -3.0
+        ],
+        [
+          0.6,
+          -0.4,
+          1.0,
+          -4.0,
+          0.5,
+          -3.0,
+          -1.0
+        ],
+        [
+          0.0,
+          0.0,
+          6.0,
+          -3.0,
+          0.0,
+          -8.0,
+          -8.0
+        ]
+      ]
+    },
+    {
+      "name": "mean_bkt_model",
+      "family": "mean_bkt",
+      "mode": "model",
+      "k_free": 8,
+      "free_names": [
+        "r_a",
+        "r_b",
+        "r_lambda",
+        "r_mu",
+        "r_pL",
+        "r_m0",
+        "r_s",
+        "r_g"
+      ],
+      "box_lo": [
+        -3.0,
+        -3.0,
+        -8.0,
+        -8.0,
+        -8.0,
+        -8.0,
+        -8.0,
+        -8.0
+      ],
+      "box_hi": [
+        3.0,
+        3.0,
+        8.0,
+        8.0,
+        8.0,
+        8.0,
+        8.0,
+        8.0
+      ],
+      "starts": [
+        [
+          0.0,
+          0.0,
+          0.0,
+          -2.0,
+          -3.0,
+          -0.4,
+          -2.0,
+          -2.0
+        ],
+        [
+          0.3,
+          -0.2,
+          -0.5,
+          -1.0,
+          -2.5,
+          0.0,
+          -1.5,
+          -2.5
+        ],
+        [
+          -0.3,
+          0.2,
+          0.5,
+          -2.5,
+          -3.5,
+          -1.0,
+          -2.5,
+          -1.5
+        ],
+        [
+          0.0,
+          0.0,
+          -1.0,
+          -0.5,
+          -2.0,
+          -0.8,
+          -1.0,
+          -3.0
+        ],
+        [
+          0.6,
+          -0.4,
+          1.0,
+          -3.0,
+          -4.0,
+          0.5,
+          -3.0,
+          -1.0
+        ],
+        [
+          0.0,
+          0.0,
+          6.0,
+          0.0,
+          -3.0,
+          0.0,
+          -8.0,
+          -8.0
+        ]
+      ]
+    },
+    {
+      "name": "mean_bkt_sava",
+      "family": "mean_bkt",
+      "mode": "sava",
+      "k_free": 8,
+      "free_names": [
+        "r_a",
+        "r_b",
+        "r_lambda",
+        "r_mu",
+        "r_pL",
+        "r_m0",
+        "r_s",
+        "r_g"
+      ],
+      "box_lo": [
+        -3.0,
+        -3.0,
+        -8.0,
+        -8.0,
+        -8.0,
+        -8.0,
+        -8.0,
+        -8.0
+      ],
+      "box_hi": [
+        3.0,
+        3.0,
+        8.0,
+        8.0,
+        8.0,
+        8.0,
+        8.0,
+        8.0
+      ],
+      "starts": [
+        [
+          0.0,
+          0.0,
+          0.0,
+          -2.0,
+          -3.0,
+          -0.4,
+          -2.0,
+          -2.0
+        ],
+        [
+          0.3,
+          -0.2,
+          -0.5,
+          -1.0,
+          -2.5,
+          0.0,
+          -1.5,
+          -2.5
+        ],
+        [
+          -0.3,
+          0.2,
+          0.5,
+          -2.5,
+          -3.5,
+          -1.0,
+          -2.5,
+          -1.5
+        ],
+        [
+          0.0,
+          0.0,
+          -1.0,
+          -0.5,
+          -2.0,
+          -0.8,
+          -1.0,
+          -3.0
+        ],
+        [
+          0.6,
+          -0.4,
+          1.0,
+          -3.0,
+          -4.0,
+          0.5,
+          -3.0,
+          -1.0
+        ],
+        [
+          0.0,
+          0.0,
+          6.0,
+          0.0,
+          -3.0,
+          0.0,
+          -8.0,
+          -8.0
+        ]
+      ]
+    },
+    {
+      "name": "mean_bkt_gold",
+      "family": "mean_bkt",
+      "mode": "gold",
+      "k_free": 8,
+      "free_names": [
+        "r_a",
+        "r_b",
+        "r_lambda",
+        "r_mu",
+        "r_pL",
+        "r_m0",
+        "r_s",
+        "r_g"
+      ],
+      "box_lo": [
+        -3.0,
+        -3.0,
+        -8.0,
+        -8.0,
+        -8.0,
+        -8.0,
+        -8.0,
+        -8.0
+      ],
+      "box_hi": [
+        3.0,
+        3.0,
+        8.0,
+        8.0,
+        8.0,
+        8.0,
+        8.0,
+        8.0
+      ],
+      "starts": [
+        [
+          0.0,
+          0.0,
+          0.0,
+          -2.0,
+          -3.0,
+          -0.4,
+          -2.0,
+          -2.0
+        ],
+        [
+          0.3,
+          -0.2,
+          -0.5,
+          -1.0,
+          -2.5,
+          0.0,
+          -1.5,
+          -2.5
+        ],
+        [
+          -0.3,
+          0.2,
+          0.5,
+          -2.5,
+          -3.5,
+          -1.0,
+          -2.5,
+          -1.5
+        ],
+        [
+          0.0,
+          0.0,
+          -1.0,
+          -0.5,
+          -2.0,
+          -0.8,
+          -1.0,
+          -3.0
+        ],
+        [
+          0.6,
+          -0.4,
+          1.0,
+          -3.0,
+          -4.0,
+          0.5,
+          -3.0,
+          -1.0
+        ],
+        [
+          0.0,
+          0.0,
+          6.0,
+          0.0,
+          -3.0,
+          0.0,
+          -8.0,
+          -8.0
+        ]
+      ]
+    }
+  ],
+  "reference_rows": [
+    "mean_raw",
+    "mean_platt",
+    "noisy_and_platt",
+    "ccmf_no_update",
+    "ccmf_model_update",
+    "ccmf_sava_update",
+    "ccmf_gold_update",
+    "label_hist_gold",
+    "label_hist_sava"
+  ],
+  "table5_rows": [
+    "mean_raw",
+    "mean_platt",
+    "noisy_and_platt",
+    "ccmf_no_update",
+    "ccmf_model_update",
+    "ccmf_sava_update",
+    "ccmf_gold_update"
+  ],
+  "optimiser": {
+    "method": "Nelder-Mead",
+    "options": {
+      "maxiter": 4000,
+      "maxfev": 8000,
+      "xatol": 0.0001,
+      "fatol": 1e-07,
+      "adaptive": true
+    },
+    "simplex_step": 0.5,
+    "max_continuations": 2,
+    "polish_step": 0.05,
+    "max_polish": 2,
+    "polish_min_improvement": 1e-07,
+    "tie_tolerance": 1e-10,
+    "n_fallback_starts": 6,
+    "fallback_rng_seed": 221
+  },
+  "gamma_profile": [
+    0.0,
+    0.25,
+    0.5,
+    0.75,
+    1.0
+  ],
+  "primary_set": [
+    "geo",
+    "min",
+    "mean_bkt_none",
+    "mean_bkt_model"
+  ],
+  "selection_rule": "argmin LL_val + k_free/N_val over primary_set; ties 1e-10 by order",
+  "primary_variant": {
+    "qlora_seed221": "mean_bkt_none",
+    "zero_shot_seed-na": "mean_bkt_none"
+  },
+  "decision_rules": {
+    "improves": "delta CI lower bound L > 0",
+    "harms": "delta CI upper bound U < 0 (within margin iff L > -0.010)",
+    "non-inferior": "L > -0.010 and neither of the above",
+    "inconclusive": "otherwise",
+    "claim_rule": "improvement may be claimed only if V*_qlora is 'improves'; zero-shot supports no claim",
+    "bootstrap": {
+      "N_BOOT": 1000,
+      "seed": 221,
+      "level": "dialogue",
+      "reference": "mean_raw"
+    },
+    "contrast_references": {
+      "noisy_and_platt": [
+        "geo",
+        "min",
+        "tempered_and"
+      ],
+      "mean_bkt_none": [
+        "mean_bkt_model",
+        "mean_bkt_sava",
+        "mean_bkt_gold"
+      ],
+      "label_hist_gold": [
+        "mean_bkt_gold"
+      ],
+      "label_hist_sava": [
+        "mean_bkt_sava"
+      ]
+    },
+    "non_inferiority_margin": 0.01
+  },
+  "environment": {
+    "python": "3.14.2 (main, Dec  5 2025, 16:49:16) [Clang 17.0.0 (clang-1700.4.4.1)]",
+    "python_executable": "/private/tmp/claude-502/-Users-manhnv-Downloads-SoICT2026-Paper/1ff52e8a-83db-4302-977b-dc1205fa3006/scratchpad/venv/bin/python",
+    "python_path_expected": "/private/tmp/claude-502/-Users-manhnv-Downloads-SoICT2026-Paper/1ff52e8a-83db-4302-977b-dc1205fa3006/scratchpad/venv/bin/python",
+    "platform": "macOS-15.7.9-arm64-arm-64bit-Mach-O",
+    "numpy": "2.5.3",
+    "scipy": "1.18.1",
+    "sklearn": "1.9.1",
+    "pandas": "3.0.5",
+    "script_sha256": "f8284c191bf6640cac7246ac319395de2cb4891d26e6390bc38f93867633ea70",
+    "cell26_sha256": "97a58c17f42e591375cfe50f36371a7b230a8a3e0f0ccf91ca6c0159d9561d8e",
+    "preregistration_sha256": "e17bd98c086a3e1bffe1fe0b44d38a95d83dec9de8931677989b91677e71d063"
+  },
+  "n_val": 1755,
+  "n_test_expected": 1985,
+  "preregistration_text_file": "PREREGISTRATION.md",
+  "deviations": [
+    "hit_maxiter is also raised when a Nelder-Mead run exhausts maxfev=8000 before nit reaches 4000 (budget exhaustion); such runs are continued exactly like nit >= 4000 runs.",
+    "Fallback starts are pre-drawn for all 14 fits from one np.random.default_rng(221) in the fixed order (backbone qlora then zero_shot; within a backbone geo, min, tempered_and, mean_bkt none/model/sava/gold) and a fit uses its own block only when triggered, so the draws are identical whichever fits trigger.",
+    "Checkpoints are one JSON per (backbone, variant) start batch under 03_ccmf/checkpoints/ (fits_<tag>.json is assembled from them at the end); the determinism duplicate is never checkpointed.",
+    "Starts of different fits/backbones are run in parallel worker processes (fork); results are deterministic and independent of scheduling; wall-clock is reported per start and per fit (sum of start times).",
+    "C6 (min AUC invariance): the first `check` run failed with max |dAUC| = 0.0030 because at the two extreme test vectors with a = e^3 float64 expit and the slip/guess map merge hundreds of distinct predictions (new ties); all six fixed starts gave |dAUC| = 0 with no new ties. The gate now applies to vectors that add no new ties (the six starts must be among them) and saturating vectors are recorded. Found before any fit and before any test access.",
+    "The min AUC invariance of the fitted parameters is recorded on validation and test (number of new ties and a parameter-free flag) instead of asserted, so that a saturating fit is reported rather than aborting the single test evaluation; test-data integrity checks run before any test prediction is computed.",
+    "The determinism duplicate of geo/QLoRA runs in worker processes rather than in the parent process.",
+    "Workers are forked with VECLIB_MAXIMUM_THREADS=1, OMP_NUM_THREADS=1, OPENBLAS_NUM_THREADS=1 and OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES (macOS Accelerate fork safety); a smoke test gave bit-identical parallel and sequential fits.",
+    "The embedded pre-registration text carried a trailing newline absent from the frozen spec; it is stripped so PREREGISTRATION.md is byte-identical to the frozen pre-registration."
+  ],
+  "output_files": [
+    "fits_<tag>.json",
+    "params_<tag>.json",
+    "gamma_profile_<tag>.csv",
+    "validation_report.csv",
+    "regression_checks_val.json",
+    "preregistration.json",
+    "manifest.json",
+    "PREREGISTRATION.md"
+  ]
+}

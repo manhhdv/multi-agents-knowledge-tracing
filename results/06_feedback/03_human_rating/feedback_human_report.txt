@@ -1,0 +1,32 @@
+n = 30 cases, 2 raters (primary score = mean of the two raters)
+
+                                     0          1        2
+criterion                  correctness  relevance  clarity
+human_mean                         3.6      3.983    4.333
+human_sd                         1.517      0.748    0.592
+rater_A_mean                       3.6        3.9    4.333
+rater_B_mean                       3.6      4.067    4.333
+weighted_kappa_A_B               0.848       0.67    0.605
+exact_agreement_A_B                0.8      0.667    0.667
+within_1_agreement_A_B           0.933      0.967      1.0
+judge_mean_reference             3.533      4.033    3.533
+spearman_judge_vs_human          0.308      0.315    0.479
+spearman_p                       0.097       0.09    0.007
+judge_minus_human_mean          -0.067       0.05     -0.8
+wilcoxon_p_judge_vs_human         0.99      0.757      0.0
+human_mean_correct               4.364      3.864    4.409
+judge_mean_correct               4.182      4.091    3.636
+human_mean_incorrect             3.091      4.136    4.273
+judge_mean_incorrect               3.0      3.909    3.364
+human_mean_undetermined           3.25      3.938    4.312
+judge_mean_undetermined          3.375      4.125    3.625
+
+Answer leakage on turns not verified correct (n=19):
+  rater A 0.053, rater B 0.053, either 0.053; Cohen's kappa A-B 1.000
+  automatic string-match check 0.158; agreement with 'either rater' 0.895
+
+Human mean by output source (llm vs rule_fallback):
+               correctness_human  relevance_human  clarity_human
+source                                                          
+llm                         3.38             4.10           4.46
+rule_fallback               5.00             3.25           3.50

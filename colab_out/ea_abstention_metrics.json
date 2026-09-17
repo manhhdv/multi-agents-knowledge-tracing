@@ -1,0 +1,25 @@
+{
+ "abstention_rate": 0.0,
+ "valid_json_rate": 0.8478260869565217,
+ "all_abstain_as_error": {
+  "n": 46,
+  "exact_match": 0.5,
+  "macro_f1": 0.27514054572878105,
+  "cohen_kappa": 0.24157706093189968,
+  "relaxed_agreement": 0.5
+ },
+ "judged_only": {
+  "n": 46,
+  "exact_match": 0.5,
+  "macro_f1": 0.27514054572878105,
+  "cohen_kappa": 0.24157706093189968,
+  "relaxed_agreement": 0.5
+ },
+ "published_no_abstention": {
+  "n": 46,
+  "exact_match": 0.43478260869565216,
+  "macro_f1": 0.2290969899665552,
+  "cohen_kappa": 0.15893108298171588,
+  "relaxed_agreement": 0.43478260869565216
+ }
+}

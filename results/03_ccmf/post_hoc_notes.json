@@ -1,0 +1,24 @@
+{
+  "created": "2026-09-13T19:42:08+00:00",
+  "type": "post-hoc numerical correction, descriptive reference rows only",
+  "finding": "label_hist predictions are means of discrete values; float64 summation order leaves mathematically tied values one ULP apart, so roc_auc_score breaks those ties arbitrarily. Rounding to 1e-12 restores the ties. test_results.csv and test_contrasts.csv are left unchanged; tie-aware values are in posthoc_label_hist_tie_aware.csv. No candidate, primary decision or Table-5 row is affected (their predictions have no such near-ties).",
+  "distinct_values": {
+    "qlora_seed221/label_hist_gold": {
+      "distinct_in_memory": 26,
+      "distinct_rounded_1e-12": 23
+    },
+    "qlora_seed221/label_hist_sava": {
+      "distinct_in_memory": 20,
+      "distinct_rounded_1e-12": 18
+    },
+    "zero_shot_seed-na/label_hist_gold": {
+      "distinct_in_memory": 26,
+      "distinct_rounded_1e-12": 23
+    },
+    "zero_shot_seed-na/label_hist_sava": {
+      "distinct_in_memory": 20,
+      "distinct_rounded_1e-12": 18
+    }
+  },
+  "verifier_note": "the first independent-verification run parsed CSVs with pandas default float parser and did not clip label_hist; both fixed before the second run"
+}

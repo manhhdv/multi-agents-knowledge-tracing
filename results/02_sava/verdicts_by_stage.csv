@@ -1,0 +1,8 @@
+sava_stage,benchmark,real_test_turns,real_test_share
+cas_equivalent,2270,333,0.1677581863979849
+cas_not_equivalent,2270,1095,0.5516372795969773
+conclusion_cas_equivalent,454,22,0.011083123425692695
+conclusion_cas_not_equivalent,454,107,0.05390428211586902
+prose_guard,0,411,0.2070528967254408
+question_guard,0,14,0.007052896725440806
+symbolic_residue_guard,0,3,0.0015113350125944584

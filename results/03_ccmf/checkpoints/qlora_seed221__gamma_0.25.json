@@ -1,0 +1,270 @@
+{
+  "fixed": {
+    "0": {
+      "loss": 0.59694380697962,
+      "x": [
+        0.557660503043815,
+        0.08876975992790287,
+        -1.1628494334219066,
+        0.11747382824993491
+      ],
+      "x0": [
+        0.0,
+        0.0,
+        -2.0,
+        -2.0
+      ],
+      "runs": [
+        {
+          "stage": "main",
+          "success": true,
+          "loss": 0.59694380697962,
+          "iterations": 255,
+          "nfev": 436,
+          "message": "Optimization terminated successfully."
+        },
+        {
+          "stage": "polish",
+          "success": true,
+          "loss": 0.59694380697962,
+          "iterations": 101,
+          "nfev": 167,
+          "message": "Optimization terminated successfully."
+        }
+      ],
+      "nit_total": 356,
+      "nfev_total": 603,
+      "hit_maxiter": false,
+      "success": true,
+      "n_polish_accepted": 0,
+      "elapsed_s": 0.8241355420323089,
+      "kind": "gamma",
+      "tag": "qlora_seed221",
+      "gamma": 0.25,
+      "start": 0
+    },
+    "1": {
+      "loss": 0.5969438069858285,
+      "x": [
+        0.557654510762877,
+        0.08877177831240257,
+        -1.1628480790225435,
+        0.11745461877791927
+      ],
+      "x0": [
+        0.3,
+        -0.2,
+        -1.5,
+        -2.5
+      ],
+      "runs": [
+        {
+          "stage": "main",
+          "success": true,
+          "loss": 0.5969438070078736,
+          "iterations": 218,
+          "nfev": 370,
+          "message": "Optimization terminated successfully."
+        },
+        {
+          "stage": "polish",
+          "success": true,
+          "loss": 0.5969438069858285,
+          "iterations": 106,
+          "nfev": 174,
+          "message": "Optimization terminated successfully."
+        }
+      ],
+      "nit_total": 324,
+      "nfev_total": 544,
+      "hit_maxiter": false,
+      "success": true,
+      "n_polish_accepted": 1,
+      "elapsed_s": 0.7076766669633798,
+      "kind": "gamma",
+      "tag": "qlora_seed221",
+      "gamma": 0.25,
+      "start": 1
+    },
+    "2": {
+      "loss": 0.596943806981664,
+      "x": [
+        0.5576587818186274,
+        0.08876895332151405,
+        -1.1628194065373616,
+        0.1174689723446264
+      ],
+      "x0": [
+        -0.3,
+        0.2,
+        -2.5,
+        -1.5
+      ],
+      "runs": [
+        {
+          "stage": "main",
+          "success": true,
+          "loss": 0.596943806981664,
+          "iterations": 173,
+          "nfev": 306,
+          "message": "Optimization terminated successfully."
+        },
+        {
+          "stage": "polish",
+          "success": true,
+          "loss": 0.596943806981664,
+          "iterations": 108,
+          "nfev": 175,
+          "message": "Optimization terminated successfully."
+        }
+      ],
+      "nit_total": 281,
+      "nfev_total": 481,
+      "hit_maxiter": false,
+      "success": true,
+      "n_polish_accepted": 0,
+      "elapsed_s": 0.6884504170157015,
+      "kind": "gamma",
+      "tag": "qlora_seed221",
+      "gamma": 0.25,
+      "start": 2
+    },
+    "3": {
+      "loss": 0.5969438069825923,
+      "x": [
+        0.5576579338550977,
+        0.08876924781527025,
+        -1.1628274218627377,
+        0.11746350096426415
+      ],
+      "x0": [
+        0.0,
+        0.0,
+        -1.0,
+        -3.0
+      ],
+      "runs": [
+        {
+          "stage": "main",
+          "success": true,
+          "loss": 0.5969438069825923,
+          "iterations": 178,
+          "nfev": 330,
+          "message": "Optimization terminated successfully."
+        },
+        {
+          "stage": "polish",
+          "success": true,
+          "loss": 0.5969438069825923,
+          "iterations": 108,
+          "nfev": 176,
+          "message": "Optimization terminated successfully."
+        }
+      ],
+      "nit_total": 286,
+      "nfev_total": 506,
+      "hit_maxiter": false,
+      "success": true,
+      "n_polish_accepted": 0,
+      "elapsed_s": 0.7341126250103116,
+      "kind": "gamma",
+      "tag": "qlora_seed221",
+      "gamma": 0.25,
+      "start": 3
+    },
+    "4": {
+      "loss": 0.5969438069812465,
+      "x": [
+        0.5576651328856873,
+        0.08877281104293708,
+        -1.1628127649589175,
+        0.11748278411500457
+      ],
+      "x0": [
+        0.6,
+        -0.4,
+        -3.0,
+        -1.0
+      ],
+      "runs": [
+        {
+          "stage": "main",
+          "success": true,
+          "loss": 0.5969438069812465,
+          "iterations": 182,
+          "nfev": 320,
+          "message": "Optimization terminated successfully."
+        },
+        {
+          "stage": "polish",
+          "success": true,
+          "loss": 0.5969438069812465,
+          "iterations": 109,
+          "nfev": 179,
+          "message": "Optimization terminated successfully."
+        }
+      ],
+      "nit_total": 291,
+      "nfev_total": 499,
+      "hit_maxiter": false,
+      "success": true,
+      "n_polish_accepted": 0,
+      "elapsed_s": 0.7013972079730593,
+      "kind": "gamma",
+      "tag": "qlora_seed221",
+      "gamma": 0.25,
+      "start": 4
+    },
+    "5": {
+      "loss": 0.5969438069825835,
+      "x": [
+        0.5576615848487791,
+        0.08877326188254311,
+        -1.1628276848248282,
+        0.11746091202315496
+      ],
+      "x0": [
+        0.0,
+        0.0,
+        -8.0,
+        -8.0
+      ],
+      "runs": [
+        {
+          "stage": "main",
+          "success": true,
+          "loss": 0.5988091799180472,
+          "iterations": 303,
+          "nfev": 554,
+          "message": "Optimization terminated successfully."
+        },
+        {
+          "stage": "polish",
+          "success": true,
+          "loss": 0.5969438069825835,
+          "iterations": 277,
+          "nfev": 482,
+          "message": "Optimization terminated successfully."
+        },
+        {
+          "stage": "polish",
+          "success": true,
+          "loss": 0.5969438069825835,
+          "iterations": 101,
+          "nfev": 164,
+          "message": "Optimization terminated successfully."
+        }
+      ],
+      "nit_total": 681,
+      "nfev_total": 1200,
+      "hit_maxiter": false,
+      "success": true,
+      "n_polish_accepted": 1,
+      "elapsed_s": 1.8455372920143418,
+      "kind": "gamma",
+      "tag": "qlora_seed221",
+      "gamma": 0.25,
+      "start": 5
+    }
+  }
+}

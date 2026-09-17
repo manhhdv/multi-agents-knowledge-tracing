@@ -1,0 +1,14 @@
+dataset,split,skip_first_labelled_turn,dialogues,dialogues_failed,dialogues_with_turns,turns,multi_kc_turns,multi_kc_share
+mathdial,train,False,1802,15,1782,8425,6963,0.8264688427299703
+mathdial,train,True,1802,15,1635,6643,5445,0.8196597922625319
+mathdial,val,False,451,3,447,2202,1835,0.8333333333333334
+mathdial,val,True,451,3,415,1755,1452,0.8273504273504273
+mathdial,test,False,595,7,588,2573,2150,0.8356004663816556
+mathdial,test,True,595,7,515,1985,1643,0.8277078085642318
+comta,all,False,153,0,151,623,366,0.5874799357945425
+comta,all,True,153,0,123,472,276,0.5847457627118644
+comta,fold1_val,False,23,0,23,100,54,0.54
+comta,fold1_val,True,23,0,21,77,43,0.5584415584415584
+comta,fold1_test,False,31,0,30,108,68,0.6296296296296297
+comta,fold1_test,True,31,0,19,78,48,0.6153846153846154
+mathdial,all,False,2848,25,2817,13200,10948,0.8293939393939394

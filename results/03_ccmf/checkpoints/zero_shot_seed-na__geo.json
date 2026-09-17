@@ -1,0 +1,263 @@
+{
+  "fixed": {
+    "0": {
+      "loss": 0.6917424088014142,
+      "x": [
+        -2.9999999995333573,
+        -0.5196576548896619,
+        7.999912068705621,
+        3.0864980583745805
+      ],
+      "x0": [
+        0.0,
+        0.0,
+        -2.0,
+        -2.0
+      ],
+      "runs": [
+        {
+          "stage": "main",
+          "success": true,
+          "loss": 0.6917424092862045,
+          "iterations": 913,
+          "nfev": 1561,
+          "message": "Optimization terminated successfully."
+        },
+        {
+          "stage": "polish",
+          "success": true,
+          "loss": 0.6917424088014142,
+          "iterations": 153,
+          "nfev": 266,
+          "message": "Optimization terminated successfully."
+        }
+      ],
+      "nit_total": 1066,
+      "nfev_total": 1827,
+      "hit_maxiter": false,
+      "success": true,
+      "n_polish_accepted": 1,
+      "elapsed_s": 2.2506960000027902,
+      "kind": "fit",
+      "tag": "zero_shot_seed-na",
+      "variant": "geo",
+      "start": 0
+    },
+    "1": {
+      "loss": 0.6917424088014125,
+      "x": [
+        -3.0,
+        -0.5196259675872836,
+        7.99996370871689,
+        3.086474648534807
+      ],
+      "x0": [
+        0.3,
+        -0.2,
+        -1.5,
+        -2.5
+      ],
+      "runs": [
+        {
+          "stage": "main",
+          "success": true,
+          "loss": 0.6917424088014137,
+          "iterations": 724,
+          "nfev": 1204,
+          "message": "Optimization terminated successfully."
+        },
+        {
+          "stage": "polish",
+          "success": true,
+          "loss": 0.6917424088014125,
+          "iterations": 56,
+          "nfev": 104,
+          "message": "Optimization terminated successfully."
+        }
+      ],
+      "nit_total": 780,
+      "nfev_total": 1308,
+      "hit_maxiter": false,
+      "success": true,
+      "n_polish_accepted": 1,
+      "elapsed_s": 1.6656655409606174,
+      "kind": "fit",
+      "tag": "zero_shot_seed-na",
+      "variant": "geo",
+      "start": 1
+    },
+    "2": {
+      "loss": 0.6917424088014119,
+      "x": [
+        -3.0,
+        -0.5196420549191668,
+        7.99995420821609,
+        3.086486189800506
+      ],
+      "x0": [
+        -0.3,
+        0.2,
+        -2.5,
+        -1.5
+      ],
+      "runs": [
+        {
+          "stage": "main",
+          "success": true,
+          "loss": 0.6917424088014125,
+          "iterations": 1091,
+          "nfev": 1819,
+          "message": "Optimization terminated successfully."
+        },
+        {
+          "stage": "polish",
+          "success": true,
+          "loss": 0.6917424088014119,
+          "iterations": 56,
+          "nfev": 104,
+          "message": "Optimization terminated successfully."
+        }
+      ],
+      "nit_total": 1147,
+      "nfev_total": 1923,
+      "hit_maxiter": false,
+      "success": true,
+      "n_polish_accepted": 1,
+      "elapsed_s": 2.4148942910251208,
+      "kind": "fit",
+      "tag": "zero_shot_seed-na",
+      "variant": "geo",
+      "start": 2
+    },
+    "3": {
+      "loss": 0.6917424088014127,
+      "x": [
+        -3.0,
+        -0.5196430827798473,
+        7.999981871602952,
+        3.086487647249375
+      ],
+      "x0": [
+        0.0,
+        0.0,
+        -1.0,
+        -3.0
+      ],
+      "runs": [
+        {
+          "stage": "main",
+          "success": true,
+          "loss": 0.6917424088014127,
+          "iterations": 544,
+          "nfev": 908,
+          "message": "Optimization terminated successfully."
+        },
+        {
+          "stage": "polish",
+          "success": true,
+          "loss": 0.6917424088014127,
+          "iterations": 55,
+          "nfev": 100,
+          "message": "Optimization terminated successfully."
+        }
+      ],
+      "nit_total": 599,
+      "nfev_total": 1008,
+      "hit_maxiter": false,
+      "success": true,
+      "n_polish_accepted": 0,
+      "elapsed_s": 1.3050222909660079,
+      "kind": "fit",
+      "tag": "zero_shot_seed-na",
+      "variant": "geo",
+      "start": 3
+    },
+    "4": {
+      "loss": 0.6917424088014247,
+      "x": [
+        -2.999999661667098,
+        -0.5196209821050546,
+        7.999918521725489,
+        3.086468460625894
+      ],
+      "x0": [
+        0.6,
+        -0.4,
+        -3.0,
+        -1.0
+      ],
+      "runs": [
+        {
+          "stage": "main",
+          "success": true,
+          "loss": 0.6917424088014247,
+          "iterations": 1031,
+          "nfev": 1729,
+          "message": "Optimization terminated successfully."
+        },
+        {
+          "stage": "polish",
+          "success": true,
+          "loss": 0.6917424088014247,
+          "iterations": 56,
+          "nfev": 102,
+          "message": "Optimization terminated successfully."
+        }
+      ],
+      "nit_total": 1087,
+      "nfev_total": 1831,
+      "hit_maxiter": false,
+      "success": true,
+      "n_polish_accepted": 0,
+      "elapsed_s": 2.18547404196579,
+      "kind": "fit",
+      "tag": "zero_shot_seed-na",
+      "variant": "geo",
+      "start": 4
+    },
+    "5": {
+      "loss": 0.6917424088014105,
+      "x": [
+        -3.0,
+        -0.5196826156346952,
+        8.0,
+        3.086514614096289
+      ],
+      "x0": [
+        0.0,
+        0.0,
+        -8.0,
+        -8.0
+      ],
+      "runs": [
+        {
+          "stage": "main",
+          "success": true,
+          "loss": 0.6917424088014117,
+          "iterations": 1034,
+          "nfev": 1715,
+          "message": "Optimization terminated successfully."
+        },
+        {
+          "stage": "polish",
+          "success": true,
+          "loss": 0.6917424088014105,
+          "iterations": 60,
+          "nfev": 110,
+          "message": "Optimization terminated successfully."
+        }
+      ],
+      "nit_total": 1094,
+      "nfev_total": 1825,
+      "hit_maxiter": false,
+      "success": true,
+      "n_polish_accepted": 1,
+      "elapsed_s": 2.2155823749490082,
+      "kind": "fit",
+      "tag": "zero_shot_seed-na",
+      "variant": "geo",
+      "start": 5
+    }
+  },
+  "fallback": {}
+}

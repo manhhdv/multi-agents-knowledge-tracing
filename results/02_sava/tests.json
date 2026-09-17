@@ -1,0 +1,20 @@
+{
+  "benchmark_mcnemar_sava_vs_regex": {
+    "only_sava_right": 452,
+    "only_regex_right": 0,
+    "exact_p": 1.7197762835371747e-136,
+    "accuracy_delta": 0.08296622613803228
+  },
+  "real_test_conclusion_cue_ablation_dialogue_bootstrap": {
+    "agreeing_share_delta": 0.03778337531486142,
+    "agreeing_share_ci": [
+      0.028859558439761755,
+      0.04734210007880218
+    ],
+    "incorrect_precision_delta": -0.019116540924942416,
+    "incorrect_precision_ci": [
+      -0.02978472443688261,
+      -0.009883288300752188
+    ]
+  }
+}

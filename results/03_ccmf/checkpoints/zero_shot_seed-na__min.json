@@ -1,0 +1,263 @@
+{
+  "fixed": {
+    "0": {
+      "loss": 0.691743048001515,
+      "x": [
+        -3.0,
+        -2.9999942631434493,
+        8.0,
+        3.319813377783589
+      ],
+      "x0": [
+        0.0,
+        0.0,
+        -2.0,
+        -2.0
+      ],
+      "runs": [
+        {
+          "stage": "main",
+          "success": true,
+          "loss": 0.6917430480105687,
+          "iterations": 304,
+          "nfev": 507,
+          "message": "Optimization terminated successfully."
+        },
+        {
+          "stage": "polish",
+          "success": true,
+          "loss": 0.691743048001515,
+          "iterations": 28,
+          "nfev": 51,
+          "message": "Optimization terminated successfully."
+        }
+      ],
+      "nit_total": 332,
+      "nfev_total": 558,
+      "hit_maxiter": false,
+      "success": true,
+      "n_polish_accepted": 1,
+      "elapsed_s": 0.6279384160297923,
+      "kind": "fit",
+      "tag": "zero_shot_seed-na",
+      "variant": "min",
+      "start": 0
+    },
+    "1": {
+      "loss": 0.6917430480019646,
+      "x": [
+        -3.0,
+        -2.999987822007768,
+        7.9999040722342585,
+        3.319819772297509
+      ],
+      "x0": [
+        0.3,
+        -0.2,
+        -1.5,
+        -2.5
+      ],
+      "runs": [
+        {
+          "stage": "main",
+          "success": true,
+          "loss": 0.6917430480019646,
+          "iterations": 348,
+          "nfev": 587,
+          "message": "Optimization terminated successfully."
+        },
+        {
+          "stage": "polish",
+          "success": true,
+          "loss": 0.6917430480019646,
+          "iterations": 35,
+          "nfev": 61,
+          "message": "Optimization terminated successfully."
+        }
+      ],
+      "nit_total": 383,
+      "nfev_total": 648,
+      "hit_maxiter": false,
+      "success": true,
+      "n_polish_accepted": 0,
+      "elapsed_s": 0.7282811249606311,
+      "kind": "fit",
+      "tag": "zero_shot_seed-na",
+      "variant": "min",
+      "start": 1
+    },
+    "2": {
+      "loss": 0.6917430480017469,
+      "x": [
+        -3.0,
+        -2.9999878339839494,
+        8.0,
+        3.319793792550665
+      ],
+      "x0": [
+        -0.3,
+        0.2,
+        -2.5,
+        -1.5
+      ],
+      "runs": [
+        {
+          "stage": "main",
+          "success": true,
+          "loss": 0.6917430480017469,
+          "iterations": 546,
+          "nfev": 917,
+          "message": "Optimization terminated successfully."
+        },
+        {
+          "stage": "polish",
+          "success": true,
+          "loss": 0.6917430480017469,
+          "iterations": 31,
+          "nfev": 52,
+          "message": "Optimization terminated successfully."
+        }
+      ],
+      "nit_total": 577,
+      "nfev_total": 969,
+      "hit_maxiter": false,
+      "success": true,
+      "n_polish_accepted": 0,
+      "elapsed_s": 1.0805973329697736,
+      "kind": "fit",
+      "tag": "zero_shot_seed-na",
+      "variant": "min",
+      "start": 2
+    },
+    "3": {
+      "loss": 0.6917430480013909,
+      "x": [
+        -3.0,
+        -3.0,
+        8.0,
+        3.3198139758392573
+      ],
+      "x0": [
+        0.0,
+        0.0,
+        -1.0,
+        -3.0
+      ],
+      "runs": [
+        {
+          "stage": "main",
+          "success": true,
+          "loss": 0.691743048001531,
+          "iterations": 368,
+          "nfev": 604,
+          "message": "Optimization terminated successfully."
+        },
+        {
+          "stage": "polish",
+          "success": true,
+          "loss": 0.6917430480013909,
+          "iterations": 41,
+          "nfev": 71,
+          "message": "Optimization terminated successfully."
+        }
+      ],
+      "nit_total": 409,
+      "nfev_total": 675,
+      "hit_maxiter": false,
+      "success": true,
+      "n_polish_accepted": 1,
+      "elapsed_s": 0.7475094170076773,
+      "kind": "fit",
+      "tag": "zero_shot_seed-na",
+      "variant": "min",
+      "start": 3
+    },
+    "4": {
+      "loss": 0.6917430480020162,
+      "x": [
+        -3.0,
+        -2.999981572367668,
+        7.9999362082672505,
+        3.319819365204385
+      ],
+      "x0": [
+        0.6,
+        -0.4,
+        -3.0,
+        -1.0
+      ],
+      "runs": [
+        {
+          "stage": "main",
+          "success": true,
+          "loss": 0.6917430480024392,
+          "iterations": 232,
+          "nfev": 393,
+          "message": "Optimization terminated successfully."
+        },
+        {
+          "stage": "polish",
+          "success": true,
+          "loss": 0.6917430480020162,
+          "iterations": 30,
+          "nfev": 50,
+          "message": "Optimization terminated successfully."
+        }
+      ],
+      "nit_total": 262,
+      "nfev_total": 443,
+      "hit_maxiter": false,
+      "success": true,
+      "n_polish_accepted": 1,
+      "elapsed_s": 0.5167196659604087,
+      "kind": "fit",
+      "tag": "zero_shot_seed-na",
+      "variant": "min",
+      "start": 4
+    },
+    "5": {
+      "loss": 0.6917430480016624,
+      "x": [
+        -3.0,
+        -3.0,
+        7.999979322189594,
+        3.319786650094885
+      ],
+      "x0": [
+        0.0,
+        0.0,
+        -8.0,
+        -8.0
+      ],
+      "runs": [
+        {
+          "stage": "main",
+          "success": true,
+          "loss": 0.6917430480019268,
+          "iterations": 487,
+          "nfev": 815,
+          "message": "Optimization terminated successfully."
+        },
+        {
+          "stage": "polish",
+          "success": true,
+          "loss": 0.6917430480016624,
+          "iterations": 36,
+          "nfev": 62,
+          "message": "Optimization terminated successfully."
+        }
+      ],
+      "nit_total": 523,
+      "nfev_total": 877,
+      "hit_maxiter": false,
+      "success": true,
+      "n_polish_accepted": 1,
+      "elapsed_s": 1.0341202089912258,
+      "kind": "fit",
+      "tag": "zero_shot_seed-na",
+      "variant": "min",
+      "start": 5
+    }
+  },
+  "fallback": {}
+}

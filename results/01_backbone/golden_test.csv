@@ -1,0 +1,4 @@
+dataset,model,seed,n_export,n_official,final_n_export,final_n_official,auc_export,auc_official
+comta,zero_shot,seed-na,78,78,19,19,63.71127224785761,63.65
+mathdial,zero_shot,seed-na,1985,1985,515,515,51.694136210933515,51.69
+mathdial,qlora,seed221,1985,1985,515,515,74.53415453527434,74.53

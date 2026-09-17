@@ -1,0 +1,70 @@
+{
+  "unparsed_outputs": {
+    "three_way": 0,
+    "binary": 0
+  },
+  "llm_judge_three_way_minus_sava": {
+    "agreement_when_judging": {
+      "delta": -0.014173460930432702,
+      "ci95": [
+        -0.040289450181432096,
+        0.01034666712626814
+      ]
+    },
+    "agreeing_share": {
+      "delta": 0.14559193954659944,
+      "ci95": [
+        0.11632396963616641,
+        0.17201767739767523
+      ]
+    }
+  },
+  "llm_judge_three_way_minus_numeric_regex": {
+    "agreement_when_judging": {
+      "delta": 0.03845418011863733,
+      "ci95": [
+        0.01499172413843857,
+        0.061092784075843225
+      ]
+    },
+    "agreeing_share": {
+      "delta": 0.053400503778337494,
+      "ci95": [
+        0.029597288240090693,
+        0.07593719571567678
+      ]
+    }
+  },
+  "llm_judge_binary_minus_sava": {
+    "agreement_when_judging": {
+      "delta": 0.009775952915977104,
+      "ci95": [
+        -0.016617399133190887,
+        0.03521174454752927
+      ]
+    },
+    "agreeing_share": {
+      "delta": 0.1702770780856423,
+      "ci95": [
+        0.14313649656898786,
+        0.19605629117100512
+      ]
+    }
+  },
+  "llm_judge_binary_minus_numeric_regex": {
+    "agreement_when_judging": {
+      "delta": 0.06240359396504713,
+      "ci95": [
+        0.034780520227337054,
+        0.0880752758785982
+      ]
+    },
+    "agreeing_share": {
+      "delta": 0.07808564231738035,
+      "ci95": [
+        0.05078666610057438,
+        0.10293669760765652
+      ]
+    }
+  }
+}

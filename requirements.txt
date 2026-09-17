@@ -1,0 +1,7 @@
+# CPU analysis scripts (cpu/, supplementary/scripts/). Tested with Python 3.14.
+numpy>=1.26
+pandas>=2.0
+scipy>=1.11
+scikit-learn>=1.3
+openpyxl>=3.1
+sympy>=1.12

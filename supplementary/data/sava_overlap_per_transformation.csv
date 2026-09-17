@@ -1,0 +1,13 @@
+transformation,n,share_with_cue,sava_acc,sava_noCueRule_acc,regex_acc
+conclusion_sentence,454,1.0,1.0,0.0,1.0
+wrong_conclusion_sentence,454,1.0,1.0,0.0,1.0
+decimal_padding,454,0.0,1.0,1.0,1.0
+identity,454,0.0,1.0,1.0,1.0
+intermediate_step,454,0.0,1.0,1.0,1.0
+learner_incorrect_final,454,0.0,1.0,1.0,1.0
+off_by_one,454,0.0,1.0,1.0,1.0
+scale_x10,454,0.0,1.0,1.0,1.0
+sign_flip,454,0.0,1.0,1.0,1.0
+split_sum,454,0.0,1.0,1.0,0.004405286343612335
+unit_suffix,454,0.0,1.0,1.0,1.0
+unreduced_fraction,454,0.0,1.0,1.0,1.0

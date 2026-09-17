@@ -1,0 +1,19 @@
+{
+ "n_items": 5448,
+ "n_references": 454,
+ "n_transformations": 12,
+ "share_items_containing_a_cascade_cue": 0.16666666666666666,
+ "sava_acc_all": 1.0,
+ "sava_acc_cue_items": 1.0,
+ "sava_acc_noncue_items": 1.0,
+ "n_cue_items": 908,
+ "n_noncue_items": 4540,
+ "sava_noCueRule_acc_cue_items": 0.0,
+ "sava_noCueRule_acc_noncue_items": 1.0,
+ "regex_acc_cue_items": 1.0,
+ "regex_acc_noncue_items": 0.9004405286343612,
+ "benchmark_share_decided_by_cue_path": 0.16666666666666666,
+ "real_turn_share_decided_by_cue_path": 0.06498740554156171,
+ "real_turn_share_cue_rule_changes_verdict": 0.06498740554156171,
+ "n_real_turns": 1985
+}

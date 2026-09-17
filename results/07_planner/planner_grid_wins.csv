@@ -1,0 +1,7 @@
+,mta_at_least_as_good,cells,mean_mta_minus_policy
+greedy_lowest_first,111.0,144.0,0.2584056712962963
+random_unmastered,110.0,144.0,0.1962152777777778
+fixed_curriculum_no_skip,128.0,144.0,0.2334519675925926
+prereq_lowest_first_previous,101.0,144.0,0.118828125
+filtered_curriculum_index_order,105.0,144.0,0.009021990740740757
+filtered_curriculum_random_topo,100.0,144.0,0.006579861111111116

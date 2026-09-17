@@ -1,0 +1,13 @@
+gold,transformation,sava,sava_no_conclusion_cue,numeric_regex,exact_string,always_correct
+correct,conclusion_sentence,1.0,0.0,1.0,0.0,1.0
+correct,decimal_padding,1.0,1.0,1.0,0.0,1.0
+correct,identity,1.0,1.0,1.0,1.0,1.0
+correct,split_sum,1.0,1.0,0.004405286343612335,0.0,1.0
+correct,unit_suffix,1.0,1.0,1.0,0.0,1.0
+correct,unreduced_fraction,1.0,1.0,1.0,0.0,1.0
+incorrect,intermediate_step,1.0,1.0,1.0,1.0,0.0
+incorrect,learner_incorrect_final,1.0,1.0,1.0,1.0,0.0
+incorrect,off_by_one,1.0,1.0,1.0,1.0,0.0
+incorrect,scale_x10,1.0,1.0,1.0,1.0,0.0
+incorrect,sign_flip,1.0,1.0,1.0,1.0,0.0
+incorrect,wrong_conclusion_sentence,1.0,0.0,1.0,1.0,0.0

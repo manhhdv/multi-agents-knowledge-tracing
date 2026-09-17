@@ -1,0 +1,154 @@
+from scipy.optimize import minimize
+from scipy.special import expit
+from sklearn.linear_model import LogisticRegression
+from sklearn.metrics import log_loss
+
+CCMF_STARTS = [
+    np.array([0.0, 0.0, 0.0, -2.0, -3.0, -0.4, -2.0, -2.0]),
+    np.array([0.3, -0.2, -0.5, -1.0, -2.5, 0.0, -1.5, -2.5]),
+    np.array([-0.3, 0.2, 0.5, -2.5, -3.5, -1.0, -2.5, -1.5]),
+    np.array([0.0, 0.0, -1.0, -0.5, -2.0, -0.8, -1.0, -3.0]),
+    np.array([0.6, -0.4, 1.0, -3.0, -4.0, 0.5, -3.0, -1.0]),
+]
+
+def unpack_ccmf(raw):
+    a = float(np.exp(np.clip(raw[0], -3, 3)))
+    b = float(4 * np.tanh(raw[1]))
+    lam, mu, p_learn, m0 = (float(x) for x in expit(raw[2:6]))
+    s, g = (float(x) for x in 0.49 * expit(raw[6:8]))
+    return a, b, lam, mu, p_learn, m0, s, g
+
+def ccmf_predict_turn(state, kcs, gaps, params):
+    a, b, lam, mu, p_learn, m0, s, g = params
+    observations = expit(a * np.asarray(gaps, dtype=float) + b)
+    current, values = {}, []
+    for kc, obs in zip(kcs, observations):
+        previous = state.get(kc, m0)
+        prior = previous + (1 - previous) * p_learn
+        value = (1 - lam) * prior + lam * obs
+        current[kc] = value
+        values.append(value)
+    product = float(np.prod(values))
+    return (1 - s) * product + g * (1 - product), current
+
+def ccmf_commit(state, current, update_label, mu):
+    for kc, value in current.items():
+        state[kc] = value if update_label is None else (1 - mu) * value + mu * update_label
+
+def sava_labels(rows):
+    return [sava_verify(r["student_text"], r["reference"])["y"] for r in rows]
+
+def predict_ccmf(rows, raw, mode, verdicts=None):
+    params = unpack_ccmf(raw)
+    state, current_dialogue, predictions = {}, None, []
+    for i, row in enumerate(rows):
+        if row["dialogue"] != current_dialogue:
+            state, current_dialogue = {}, row["dialogue"]
+        prediction, current = ccmf_predict_turn(state, row["kcs"], row["gaps"], params)
+        predictions.append(prediction)
+        label = {"none": None, "model": prediction, "gold": row["label"],
+                 "sava": verdicts[i] if verdicts is not None else None}[mode]
+        ccmf_commit(state, current, label, params[3])
+    return np.clip(np.array(predictions), 1e-6, 1 - 1e-6)
+
+def fit_ccmf(rows, mode, verdicts=None):
+    y = np.array([r["label"] for r in rows])
+    objective = lambda raw: log_loss(y, predict_ccmf(rows, raw, mode, verdicts), labels=[0, 1])
+    fits = [minimize(objective, start, method="Nelder-Mead",
+                     options={"maxiter": CCMF_MAXITER, "xatol": 1e-4, "fatol": 1e-6})
+            for start in CCMF_STARTS[:CCMF_RESTARTS]]
+    best = min(fits, key=lambda fit: fit.fun)
+    return best.x, [{"success": bool(f.success), "loss": float(f.fun), "iterations": int(f.nit)} for f in fits]
+
+def fit_platt(rows):
+    x = np.concatenate([r["gaps"] for r in rows]).reshape(-1, 1)
+    y = np.concatenate([np.repeat(r["label"], len(r["gaps"])) for r in rows])
+    if len(np.unique(y)) < 2:
+        return 1.0, 0.0
+    model = LogisticRegression(C=1e6, max_iter=2000, random_state=PRIMARY_SEED).fit(x, y)
+    return float(model.coef_[0, 0]), float(model.intercept_[0])
+
+def fit_noisy_and(rows, a, b):
+    y = np.array([r["label"] for r in rows])
+    products = np.array([np.prod(expit(a * r["gaps"] + b)) for r in rows])
+    def objective(raw):
+        s, g = expit(raw) * 0.49
+        return log_loss(y, np.clip((1 - s) * products + g * (1 - products), 1e-6, 1 - 1e-6), labels=[0, 1])
+    opt = minimize(objective, np.array([-2.0, -2.0]), method="Nelder-Mead", options={"maxiter": 1000})
+    return tuple(float(x) for x in expit(opt.x) * 0.49)
+
+def paired_bootstrap(y, predictions, dialogues, reference="mean_raw"):
+    rng = np.random.default_rng(PRIMARY_SEED)
+    groups = {d: np.flatnonzero(dialogues == d) for d in np.unique(dialogues)}
+    ids = list(groups)
+    aucs = {k: [] for k in predictions}
+    deltas = {k: [] for k in predictions}
+    for _ in range(N_BOOT):
+        idx = np.concatenate([groups[ids[j]] for j in rng.integers(0, len(ids), len(ids))])
+        if len(np.unique(y[idx])) < 2:
+            continue
+        base = roc_auc_score(y[idx], predictions[reference][idx])
+        for key, pred in predictions.items():
+            value = roc_auc_score(y[idx], pred[idx])
+            aucs[key].append(value)
+            deltas[key].append(value - base)
+    q = lambda v: (float(np.quantile(v, 0.025)), float(np.quantile(v, 0.975))) if v else (float("nan"),) * 2
+    return {k: {"ci": q(aucs[k]), "delta_ci": q(deltas[k])} for k in predictions}
+
+ccmf_rows, CCMF_FITS = [], {}
+CCMF_RUNS = [(m, s) for m, s in MODEL_RUNS if m == "qlora" or CCMF_ON_ZERO_SHOT]
+if RUN_CCMF:
+    for dataset in FIT_ORDER:
+        for model_key, seed in CCMF_RUNS:
+            tag = f"{dataset}_{model_key}_{seed_tag(model_key, seed)}"
+            fit_on = FIT_ON[dataset]
+            reuse = fit_on != dataset          # CoMTA evaluation only: parameters fitted on MathDial validation
+            val_rows = load_rows(fit_on, model_key, seed, "val")
+            test_rows = load_rows(dataset, model_key, seed, "test")
+            y_test = np.array([r["label"] for r in test_rows])
+            dialogues = np.array([r["dialogue"] for r in test_rows])
+            if reuse:
+                fitted = CCMF_FITS[(fit_on, model_key, seed)]
+                a, b, s, g = fitted["a"], fitted["b"], fitted["s"], fitted["g"]
+            else:
+                a, b = fit_platt(val_rows)
+                s, g = fit_noisy_and(val_rows, a, b)
+                fitted = CCMF_FITS[(dataset, model_key, seed)] = {"a": a, "b": b, "s": s, "g": g, "raw": {}}
+            products = np.array([np.prod(expit(a * r["gaps"] + b)) for r in test_rows])
+            predictions = {
+                "mean_raw": mean_prediction(test_rows),
+                "mean_platt": np.array([expit(a * r["gaps"] + b).mean() for r in test_rows]),
+                "noisy_and_platt": (1 - s) * products + g * (1 - products),
+            }
+            modes = ["none", "model", "gold"] + (["sava"] if dataset == "mathdial" else [])
+            parameters = {"fit_on": fit_on, "platt": {"a": a, "b": b}, "noisy_and": {"s": s, "g": g}}
+            fit_logs = {}
+            for mode in modes:
+                test_verdicts = sava_labels(test_rows) if mode == "sava" else None
+                if reuse:
+                    raw, fits = fitted["raw"][mode], []
+                else:
+                    val_verdicts = sava_labels(val_rows) if mode == "sava" else None
+                    raw, fits = fit_ccmf(val_rows, mode, val_verdicts)
+                    fitted["raw"][mode] = raw
+                name = {"none": "ccmf_no_update", "model": "ccmf_model_update",
+                        "gold": "ccmf_gold_update", "sava": "ccmf_sava_update"}[mode]
+                predictions[name] = predict_ccmf(test_rows, raw, mode, test_verdicts)
+                keys = ["a", "b", "lambda", "mu", "p_learn", "m0", "slip", "guess"]
+                parameters[name] = {"raw": [float(x) for x in raw], **dict(zip(keys, unpack_ccmf(raw)))}
+                fit_logs[name] = fits
+                print(tag, name, "restarts:", [(f["success"], round(f["loss"], 5)) for f in fits])
+            boot = paired_bootstrap(y_test, predictions, dialogues)
+            for name, pred in predictions.items():
+                ccmf_rows.append({"dataset": dataset, "model": model_key, "seed": seed_tag(model_key, seed),
+                                  "variant": name, "n": len(y_test), "auc": safe_auc(y_test, pred),
+                                  "ci_low": boot[name]["ci"][0], "ci_high": boot[name]["ci"][1],
+                                  "delta_vs_mean_raw": safe_auc(y_test, pred) - safe_auc(y_test, predictions["mean_raw"]),
+                                  "delta_ci_low": boot[name]["delta_ci"][0], "delta_ci_high": boot[name]["delta_ci"][1]})
+            (RUN_ROOT / f"ccmf_parameters_{tag}.json").write_text(json.dumps({"parameters": parameters, "fits": fit_logs}, indent=2))
+            pd.DataFrame({"dialogue": dialogues, "turn_id": [r["turn_id"] for r in test_rows], "label": y_test,
+                          **predictions}).to_csv(RUN_ROOT / f"ccmf_test_predictions_{tag}.csv", index=False)
+
+ccmf_df = pd.DataFrame(ccmf_rows)
+ccmf_df.to_csv(RUN_ROOT / "ccmf_real_logits_ablation.csv", index=False)
+display(ccmf_df)

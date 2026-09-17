@@ -1,0 +1,542 @@
+dialogue,turn_id,valid_json,source,category,severity,explanation,category_rule_based,raw_output
+28,2,True,llm,procedural,medium,"The student incorrectly applied the definition of a complement to the given angle A. They mistakenly subtracted the angle from 90, instead of subtracting the angle's measure from 90.",other,"{
+  ""error_category"": ""procedural"",
+  ""explanation"": ""The student incorrectly applied the definition of a complement to the given angle A. They mistakenly subtracted the angle from 90, instead of subtracting the angle's measure from 90."",
+  ""affected_concepts"": [""Use facts about supplementary, complementary, vertical, and adjacent angles in a multi-step problem to write and solve simple equations for an unknown angle""],
+  ""severity"": ""medium"",
+  ""instructional_suggestions"": [
+    ""Review the definition of a complement and supplement of an angle with the student."",
+    ""Provide examples of finding complements and supplements of angles."",
+    ""Guide the student in applying the definitions to the given angle A.""
+  ]
+}"
+74,2,True,llm,procedural,medium,"The student incorrectly rearranged the equation, introducing an extra term and altering the original equation. This indicates a misunderstanding of the equation manipulation process.",other,"{
+  ""error_category"": ""procedural"",
+  ""explanation"": ""The student incorrectly rearranged the equation, introducing an extra term and altering the original equation. This indicates a misunderstanding of the equation manipulation process."",
+  ""affected_concepts"": [
+    ""Apply the properties of operations to generate equivalent expressions"",
+    ""Understand solving an equation or inequality as a process of answering a question"",
+    ""Solve linear equations and inequalities in one variable, including equations with coefficients represented by letters""
+  ],
+  ""severity"": ""medium"",
+  ""instructional_suggestions"": [
+    ""Review the correct procedure for rearranging and simplifying linear equations."",
+    ""Emphasize the importance of maintaining the original equation's structure during manipulation."",
+    ""Provide additional practice exercises to reinforce the student's understanding of equation manipulation.""
+  ]
+}"
+110,3,True,llm,procedural,medium,The student incorrectly applied the sum identity for sine to the given problem. They failed to substitute the given values of a and b into the correct formula.,other,"{
+  ""error_category"": ""procedural"",
+  ""explanation"": ""The student incorrectly applied the sum identity for sine to the given problem. They failed to substitute the given values of a and b into the correct formula."",
+  ""affected_concepts"": [""Prove the addition and subtraction formulas for sine, cosine, and tangent""],
+  ""severity"": ""medium"",
+  ""instructional_suggestions"": [
+    ""Review the sum identity for sine and provide additional examples for the student to practice."",
+    ""Emphasize the importance of substituting given values into the correct formulas."",
+    ""Consider providing a step-by-step guide for the student to follow when applying trigonometric identities.""
+  ]
+}"
+110,4,True,llm,procedural,medium,The student correctly applied the sum identity for sine but then proceeded to add the values instead of substituting them into the equation. This indicates a misunderstanding of the procedural steps involved in applying the identity.,other,"{
+  ""error_category"": ""procedural"",
+  ""explanation"": ""The student correctly applied the sum identity for sine but then proceeded to add the values instead of substituting them into the equation. This indicates a misunderstanding of the procedural steps involved in applying the identity."",
+  ""affected_concepts"": [""Prove the addition and subtraction formulas for sine, cosine, and tangent""],
+  ""severity"": ""medium"",
+  ""instructional_suggestions"": [
+    ""Review the procedural steps involved in applying trigonometric identities, emphasizing the importance of substituting given values into the equation."",
+    ""Provide additional practice problems that require students to apply trigonometric identities to solve problems."",
+    ""Consider using visual aids or diagrams to help students understand the relationships between angles and their trigonometric functions.""
+  ]
+}"
+110,5,True,llm,procedural,medium,The student incorrectly applied the sum identity for sine by not properly substituting the given values into the equation. They also failed to simplify the expression correctly.,other,"{
+  ""error_category"": ""procedural"",
+  ""explanation"": ""The student incorrectly applied the sum identity for sine by not properly substituting the given values into the equation. They also failed to simplify the expression correctly."",
+  ""affected_concepts"": [""Prove the addition and subtraction formulas for sine, cosine, and tangent and use them to solve problems.""],
+  ""severity"": ""medium"",
+  ""instructional_suggestions"": [
+    ""Review the correct application of trigonometric identities, particularly the sum identity for sine."",
+    ""Emphasize the importance of substituting given values into the equation correctly."",
+    ""Practice simplifying expressions involving trigonometric functions.""
+  ]
+}"
+79,2,True,llm,procedural,medium,"The student's first step is to make the left side equal to sec^2, which is incorrect. The correct first step should be to manipulate the given identity to match the Pythagorean identity, not to directly equate the left side to sec^2.",other,"{
+  ""error_category"": ""procedural"",
+  ""explanation"": ""The student's first step is to make the left side equal to sec^2, which is incorrect. The correct first step should be to manipulate the given identity to match the Pythagorean identity, not to directly equate the left side to sec^2."",
+  ""affected_concepts"": [""Prove the Pythagorean identity sin^(2)(θ) + cos^(2)(θ) = 1""],
+  ""severity"": ""medium"",
+  ""instructional_suggestions"": [
+    ""Remind the student to use the Pythagorean identity as a starting point to simplify the given identity."",
+    ""Guide the student to express the given identity in terms of sin(x), cos(x), or tan(x) to establish a connection with the Pythagorean identity."",
+    ""Encourage the student to use trigonometric identities to manipulate the given equation, rather than directly equating it to sec^2.""
+  ]
+}"
+135,2,True,llm,procedural,medium,"The student correctly identified the conversion ratio from radians to degrees, but failed to apply it correctly. They multiplied 4 radians by 180, but forgot to divide by pi.",other,"{
+  ""error_category"": ""procedural"",
+  ""explanation"": ""The student correctly identified the conversion ratio from radians to degrees, but failed to apply it correctly. They multiplied 4 radians by 180, but forgot to divide by pi."",
+  ""affected_concepts"": [""Convert among different-sized standard measurement units within a given measurement system""],
+  ""severity"": ""medium"",
+  ""instructional_suggestions"": [
+    ""Remind the student to carefully apply the conversion ratio, including the division by pi."",
+    ""Encourage the student to check their work by converting a known value from radians to degrees to ensure they understand the process."",
+    ""Consider providing additional practice problems that require the student to convert between different measurement units.""
+  ]
+}"
+149,1,True,llm,conceptual,medium,"The student has incorrectly applied the Pythagorean identity, which states that sin^2(x) + cos^2(x) = 1, not sin^2(x) + cos^2(x) = cot^2(x) - cos^2(x).",other,"{
+  ""error_category"": ""conceptual"",
+  ""explanation"": ""The student has incorrectly applied the Pythagorean identity, which states that sin^2(x) + cos^2(x) = 1, not sin^2(x) + cos^2(x) = cot^2(x) - cos^2(x)."",
+  ""affected_concepts"": [""Prove the Pythagorean identity sin^(2)(θ) + cos^(2)(θ) = 1 and use it to find sin(θ), cos(θ),or tan(θ) given sin(θ), cos(θ), or tan(θ) and the quadrant of th""],
+  ""severity"": ""medium"",
+  ""instructional_suggestions"": [
+    ""Review the Pythagorean identity with the student and ensure they understand its application."",
+    ""Provide examples of how to use the Pythagorean identity to solve trigonometric equations."",
+    ""Encourage the student to re-evaluate their approach to the original equation.""
+  ]
+}"
+15,2,False,rule_fallback,other,medium,The error could not be attributed to a specific mechanism from the text alone.,other,"{
+  ""error_category"": ""procedural"",
+  ""explanation"": ""The student is attempting to apply the x-factor technique but lacks the initial step of multiplying the coefficient of \(x^2\) with the constant term."",
+  ""affected_concepts"": [""Choose and produce an equivalent form of an expression to reveal and explain properties of the quantity represented by the expression""],
+  ""severity"": ""low"",
+  ""instructional_suggestions"": [
+    ""Provide a clear example of the initial step in the x-factor technique to ensure the student understands the process."",
+    ""Encourage the student to practice the x-factor technique with simple quadratic equations to build confidence."",
+    ""Remind the student to carefully follow the steps of the x-factor technique to avoid confusion.""
+  ]
+}"
+15,3,False,rule_fallback,other,high,The error could not be attributed to a specific mechanism from the text alone.,other,"{
+  ""error_category"": ""procedural"",
+  ""explanation"": ""The student failed to demonstrate the multiplication of the coefficient of \(x^2\) (2) with the constant term (-6), which is a crucial step in the x-factor technique."",
+  ""affected_concepts"": [""Interpret products of whole numbers"", ""Use multiplication and division within 100 to solve word problems""],
+  ""severity"": ""low"",
+  ""instructional_suggestions"": [
+    ""Provide a concrete example of multiplying two whole numbers to help the student understand the concept."",
+    ""Guide the student through the multiplication process, emphasizing the importance of accurate calculations."",
+    ""Encourage the student to practice the x-factor technique with simple quadratic equations to build confidence and fluency.""
+  ]
+}"
+15,4,False,rule_fallback,other,high,The error could not be attributed to a specific mechanism from the text alone.,other,"{
+  ""error_category"": ""procedural"",
+  ""explanation"": ""The student is having difficulty with the procedural step of the x-factor technique, specifically with the multiplication of the coefficient of \(x^2\) and the constant term."",
+  ""affected_concepts"": [""Interpret products of whole numbers"", ""Use multiplication and division within 100 to solve word problems""],
+  ""severity"": ""medium"",
+  ""instructional_suggestions"": [
+    ""Provide a visual demonstration of the x-factor technique, including the multiplication of the coefficient of \(x^2\) and the constant term."",
+    ""Use concrete examples or real-world scenarios to illustrate the concept of multiplication and its application in the x-factor technique."",
+    ""Check for understanding by asking the student to explain the process in their own words or to identify the correct product of the multiplication.""
+  ]
+}"
+15,5,True,llm,procedural,medium,"The student is having difficulty with the procedural aspect of the x-factor technique, specifically with the multiplication step. They are not able to demonstrate the process visually and are asking for a visual representation.",other,"{
+  ""error_category"": ""procedural"",
+  ""explanation"": ""The student is having difficulty with the procedural aspect of the x-factor technique, specifically with the multiplication step. They are not able to demonstrate the process visually and are asking for a visual representation."",
+  ""affected_concepts"": [""Interpret products of whole numbers"", ""Use multiplication and division within 100 to solve word problems""],
+  ""severity"": ""medium"",
+  ""instructional_suggestions"": [
+    ""Provide a visual representation of the multiplication step to help the student understand the process."",
+    ""Break down the multiplication step into smaller, more manageable parts to help the student see the relationships between the numbers."",
+    ""Use real-world examples or visual aids to help the student connect the abstract concept of multiplication to concrete objects or situations.""
+  ]
+}"
+15,6,False,rule_fallback,other,high,The error could not be attributed to a specific mechanism from the text alone.,other,"{
+  ""error_category"": ""procedural"",
+  ""explanation"": ""The student is having difficulty with the procedural aspect of the x-factor technique, specifically with the step of multiplying the coefficient of \(x^2\) with the constant term. The student is requesting a visual demonstration, but the tutor is explaining the process instead."",
+  ""affected_concepts"": [""Choose and produce an equivalent form of an expression to reveal and explain properties of the quantity represented by the expression""],
+  ""severity"": ""medium"",
+  ""instructional_suggestions"": [
+    ""Provide a clear, step-by-step visual demonstration of the x-factor technique, including the multiplication of the coefficient of \(x^2\) with the constant term."",
+    ""Check for understanding by asking the student to explain the process in their own words."",
+    ""Consider providing additional practice problems for the student to apply the x-factor technique.""
+  ]
+}"
+15,7,False,rule_fallback,other,high,The error could not be attributed to a specific mechanism from the text alone.,other,"{
+  ""error_category"": ""procedural"",
+  ""explanation"": ""The student is unable to apply the x-factor technique correctly, specifically in the step of multiplying the coefficient of \(x^2\) with the constant term. This indicates a misunderstanding of the procedural steps involved in the technique."",
+  ""affected_concepts"": [""Choose and produce an equivalent form of an expression to reveal and explain properties of the quantity represented by the expression""],
+  ""severity"": ""medium"",
+  ""instructional_suggestions"": [
+    ""Provide a clear visual representation of the x-factor technique, including the multiplication of the coefficient of \(x^2\) with the constant term."",
+    ""Break down the technique into smaller, manageable steps to help the student understand the process."",
+    ""Use concrete examples and real-world applications to illustrate the importance and relevance of the x-factor technique.""
+  ]
+}"
+152,2,True,llm,procedural,medium,"The student is missing a crucial step in distributing the 5 to each term inside the parentheses, which is to multiply the 5 with the term (x-2) as well.",other,"{
+  ""error_category"": ""procedural"",
+  ""explanation"": ""The student is missing a crucial step in distributing the 5 to each term inside the parentheses, which is to multiply the 5 with the term (x-2) as well."",
+  ""affected_concepts"": [""Apply the properties of operations to generate equivalent expressions""],
+  ""severity"": ""medium"",
+  ""instructional_suggestions"": [
+    ""Remind the student to multiply the 5 with each term inside the parentheses, including the constant term."",
+    ""Use a visual aid to demonstrate the distribution process."",
+    ""Have the student re-write the original equation with the correct distribution applied.""
+  ]
+}"
+152,3,True,llm,procedural,medium,"The student incorrectly applied the distributive property by only multiplying the constant term (-2) by 5, instead of multiplying both the variable term (x) and the constant term (-2) by 5.",other,"{
+  ""error_category"": ""procedural"",
+  ""explanation"": ""The student incorrectly applied the distributive property by only multiplying the constant term (-2) by 5, instead of multiplying both the variable term (x) and the constant term (-2) by 5."",
+  ""affected_concepts"": [""Apply the properties of operations to generate equivalent expressions""],
+  ""severity"": ""medium"",
+  ""instructional_suggestions"": [
+    ""Review the distributive property with the student, emphasizing the need to multiply each term inside the parentheses by the number outside."",
+    ""Provide examples of distributing a number to both a variable and a constant term."",
+    ""Encourage the student to read the problem carefully and check their work for completeness.""
+  ]
+}"
+152,4,False,rule_fallback,other,high,The error could not be attributed to a specific mechanism from the text alone.,other,"{
+  ""error_category"": ""procedural"",
+  ""explanation"": ""The student attempted to distribute the 5 to each term inside the parentheses but made a mistake in the process. They correctly identified the need to multiply 5 by \(x\) but incorrectly multiplied 5 by -2 instead of distributing it correctly."",
+  ""affected_concepts"": [""Apply the properties of operations to generate equivalent expressions""],
+  ""severity"": ""medium"",
+  ""instructional_suggestions"": [
+    ""Review the distributive property and its application to expressions with parentheses."",
+    ""Provide examples of distributing a number to each term inside parentheses."",
+    ""Encourage the student to read the expression carefully and apply the distributive property correctly.""
+  ]
+}"
+152,5,True,llm,procedural,medium,"The student incorrectly applied the distributive property by multiplying 5 by -2, resulting in a subtraction instead of a multiplication.",other,"{
+  ""error_category"": ""procedural"",
+  ""explanation"": ""The student incorrectly applied the distributive property by multiplying 5 by -2, resulting in a subtraction instead of a multiplication."",
+  ""affected_concepts"": [""Apply the properties of operations to generate equivalent expressions""],
+  ""severity"": ""medium"",
+  ""instructional_suggestions"": [
+    ""Review the distributive property and its application to expressions with parentheses."",
+    ""Provide examples of distributing numbers to terms inside parentheses."",
+    ""Emphasize the importance of accurately applying mathematical properties to avoid errors.""
+  ]
+}"
+152,6,True,llm,procedural,medium,"The student incorrectly applied the distributive property by multiplying 5 by -2, resulting in a subtraction instead of a multiplication. This indicates a misunderstanding of the procedural steps involved in distributing a number to terms inside parentheses.",other,"{
+  ""error_category"": ""procedural"",
+  ""explanation"": ""The student incorrectly applied the distributive property by multiplying 5 by -2, resulting in a subtraction instead of a multiplication. This indicates a misunderstanding of the procedural steps involved in distributing a number to terms inside parentheses."",
+  ""affected_concepts"": [""Apply the properties of operations to generate equivalent expressions""],
+  ""severity"": ""medium"",
+  ""instructional_suggestions"": [
+    ""Review the distributive property and its application to expressions with parentheses."",
+    ""Provide examples of distributing numbers to terms inside parentheses."",
+    ""Emphasize the importance of accurately applying procedural steps in solving equations.""
+  ]
+}"
+152,7,True,llm,procedural,medium,"The student incorrectly multiplied 5 by -2, resulting in 5x - 2, instead of correctly multiplying 5 by -2 to get -10.",other,"{
+  ""error_category"": ""procedural"",
+  ""explanation"": ""The student incorrectly multiplied 5 by -2, resulting in 5x - 2, instead of correctly multiplying 5 by -2 to get -10."",
+  ""affected_concepts"": [""Apply the properties of operations to generate equivalent expressions""],
+  ""severity"": ""medium"",
+  ""instructional_suggestions"": [
+    ""Provide additional guidance on the distributive property and how to apply it to expressions with parentheses."",
+    ""Use visual aids or diagrams to help the student understand the concept of distributing a number to each term inside the parentheses."",
+    ""Encourage the student to read the problem carefully and check their work for accuracy before moving on to the next step.""
+  ]
+}"
+152,8,True,llm,procedural,medium,"The student incorrectly applied the distributive property by multiplying 5 by 2 instead of -2, and also failed to write the correct expression after distributing 5 to x and -2.",other,"{
+  ""error_category"": ""procedural"",
+  ""explanation"": ""The student incorrectly applied the distributive property by multiplying 5 by 2 instead of -2, and also failed to write the correct expression after distributing 5 to x and -2."",
+  ""affected_concepts"": [""Apply the properties of operations to generate equivalent expressions""],
+  ""severity"": ""medium"",
+  ""instructional_suggestions"": [
+    ""Provide additional examples of distributing numbers to terms inside parentheses to reinforce understanding."",
+    ""Encourage the student to read the expression carefully before applying operations."",
+    ""Consider using visual aids or diagrams to help the student visualize the distribution process.""
+  ]
+}"
+152,9,True,llm,procedural,medium,"The student incorrectly multiplied 5 by -2, resulting in 10 instead of -10. This indicates a misunderstanding of the distributive property and the order of operations.",other,"{
+  ""error_category"": ""procedural"",
+  ""explanation"": ""The student incorrectly multiplied 5 by -2, resulting in 10 instead of -10. This indicates a misunderstanding of the distributive property and the order of operations."",
+  ""affected_concepts"": [""Apply the properties of operations to generate equivalent expressions""],
+  ""severity"": ""medium"",
+  ""instructional_suggestions"": [
+    ""Review the distributive property and its application to expressions with parentheses."",
+    ""Emphasize the importance of following the order of operations (PEMDAS) when solving equations."",
+    ""Provide additional practice exercises to reinforce the student's understanding of the distributive property and order of operations.""
+  ]
+}"
+152,13,True,llm,procedural,medium,"The student had difficulty with the distribution of the number outside the parentheses to each term inside the parentheses, specifically with the multiplication of 5 by -2.",other,"{
+  ""error_category"": ""procedural"",
+  ""explanation"": ""The student had difficulty with the distribution of the number outside the parentheses to each term inside the parentheses, specifically with the multiplication of 5 by -2."",
+  ""affected_concepts"": [""Solve real-world and mathematical problems by writing and solving equations of the form x + p = q and px = q for cases in which p, q and x are all nonnegative"", ""Solve linear equations and inequalities in one variable, including equations with coefficients represented by letters""],
+  ""severity"": ""medium"",
+  ""instructional_suggestions"": [
+    ""Provide additional examples of distributing numbers outside parentheses to each term inside."",
+    ""Emphasize the importance of carefully reading and following the order of operations."",
+    ""Use visual aids or diagrams to help students understand the concept of distribution.""
+  ]
+}"
+152,15,True,llm,procedural,medium,"The student struggled with distributing the number outside the parentheses to each term inside, leading to confusion and incorrect steps in solving the equation.",other,"{
+  ""error_category"": ""procedural"",
+  ""explanation"": ""The student struggled with distributing the number outside the parentheses to each term inside, leading to confusion and incorrect steps in solving the equation."",
+  ""affected_concepts"": [
+    ""Understand a fraction 1/b as the quantity formed by 1 part when a whole is partitioned into b equal parts"",
+    ""Understand a fraction a/b as the quantity formed b...""
+  ],
+  ""severity"": ""medium"",
+  ""instructional_suggestions"": [
+    ""Review the concept of distributing numbers to terms inside parentheses."",
+    ""Practice solving equations with multiple terms inside parentheses."",
+    ""Emphasize the importance of following the order of operations and accurately multiplying terms.""
+  ]
+}"
+27,2,True,llm,procedural,medium,"The student correctly identified the total length of line segment XZ, but failed to apply the given ratio to find the coordinates of point Y. They only divided the total length by 3, which is not the correct approach to solve the problem.",other,"{
+  ""error_category"": ""procedural"",
+  ""explanation"": ""The student correctly identified the total length of line segment XZ, but failed to apply the given ratio to find the coordinates of point Y. They only divided the total length by 3, which is not the correct approach to solve the problem."",
+  ""affected_concepts"": [""Recognize and represent proportional relationships between quantities."", ""Find the point on a directed line segment between two given points that partitions the segment in a given ratio.""],
+  ""severity"": ""medium"",
+  ""instructional_suggestions"": [
+    ""Remind the student to use the given ratio to find the lengths of XY and YZ, and then use the section formula to find the coordinates of point Y."",
+    ""Provide additional examples or practice problems that involve finding points on a line segment that partition the segment in a given ratio."",
+    ""Encourage the student to draw a diagram to visualize the problem and help them understand the concept better.""
+  ]
+}"
+54,2,False,rule_fallback,other,medium,The error could not be attributed to a specific mechanism from the text alone.,other,"{
+  ""error_category"": ""procedural"",
+  ""explanation"": ""The student provided an incorrect answer, 46, for the multiplication question \(7 \times 8\). This suggests a procedural error, as the student likely performed the multiplication incorrectly."",
+  ""affected_concepts"": [""Interpret products of whole numbers, e.g., interpret 5 × 7 as the total number of objects in 5 groups of 7 objects each."", ""Use multiplication and division within 100 to solve word problems in situations involving equal groups, arrays, and measurement quantities, e.g., by using drawings and diagrams."", ""Fluently multiply and divide within 100, using strategies such as the relationship between multiplication and division (e.g., knowing that 8 × 5 = 40, one knows that 40 ÷ 8 = 5).""],
+  ""severity"": ""medium"",
+  ""instructional_suggestions"": [
+    ""Review the student's understanding of multiplication facts within 100."",
+    ""Provide additional practice opportunities for the student to reinforce their procedural fluency with multiplication."",
+    ""Consider using visual aids or real-world examples to help the student connect multiplication to meaningful contexts.""
+  ]
+}"
+65,1,True,llm,conceptual,medium,"The student's error lies in their understanding of the range of the arcsine function. The arcsine function is defined only for inputs in the interval [-1, 1]. The student's input, -1/2, is within this interval, but their answer, 7π/6, is not. This suggests a misunderstanding of the concept of the range of the arcsine function.",other,"{
+  ""error_category"": ""conceptual"",
+  ""explanation"": ""The student's error lies in their understanding of the range of the arcsine function. The arcsine function is defined only for inputs in the interval [-1, 1]. The student's input, -1/2, is within this interval, but their answer, 7π/6, is not. This suggests a misunderstanding of the concept of the range of the arcsine function."",
+  ""affected_concepts"": [""Explain how the unit circle in the coordinate plane enables the extension of trigonometric functions to all real numbers""],
+  ""severity"": ""medium"",
+  ""instructional_suggestions"": [
+    ""Review the range of the arcsine function and how it relates to the unit circle."",
+    ""Use visual aids, such as a unit circle diagram, to help the student understand the relationship between the input of the arcsine function and its output."",
+    ""Provide examples of inputs and outputs for the arcsine function to help the student see the pattern and understand the concept better.""
+  ]
+}"
+49,1,True,llm,procedural,medium,"The student correctly identified the place value of each digit in 0.9998, but failed to apply the correct conversion to word notation. Specifically, they did not use the correct conversion factors for thousandths, hundredths, and tenths.",other,"{
+  ""error_category"": ""procedural"",
+  ""explanation"": ""The student correctly identified the place value of each digit in 0.9998, but failed to apply the correct conversion to word notation. Specifically, they did not use the correct conversion factors for thousandths, hundredths, and tenths."",
+  ""affected_concepts"": [""Recognize that in a multi-digit number, a digit in one place represents 10 times as much as it represents in the place to its right and 1/10 of what it represents in the place to its left""],
+  ""severity"": ""medium"",
+  ""instructional_suggestions"": [
+    ""Review the conversion of decimals to word notation, emphasizing the use of correct conversion factors."",
+    ""Provide examples of converting decimals to word notation, with a focus on thousandths, hundredths, and tenths."",
+    ""Have the student practice converting decimals to word notation, using a mix of simple and complex examples.""
+  ]
+}"
+26,2,True,llm,procedural,medium,"The student is on the right track by considering the use of trigonometric ratios to solve the problem, but they are missing a crucial step in the process. They need to calculate the distance from the kayak to the beacon at both times and then find the average velocity by dividing the change in distance by the change in time.",other,"{
+  ""error_category"": ""procedural"",
+  ""explanation"": ""The student is on the right track by considering the use of trigonometric ratios to solve the problem, but they are missing a crucial step in the process. They need to calculate the distance from the kayak to the beacon at both times and then find the average velocity by dividing the change in distance by the change in time."",
+  ""affected_concepts"": [
+    ""Understand that by similarity, side ratios in right triangles are properties of the angles in the triangle, leading to definitions of trigonometric ratios for sine, cosine, and tangent"",
+    ""Use trigonometric ratios and the Pythagorean Theorem to solve right triangles in applied problems""
+  ],
+  ""severity"": ""medium"",
+  ""instructional_suggestions"": [
+    ""Remind the student to calculate the distance from the kayak to the beacon at both times using the tangent function and the given heights."",
+    ""Guide the student in finding the average velocity by dividing the change in distance by the change in time."",
+    ""Encourage the student to check their units and ensure that they are using the correct units for distance and time.""
+  ]
+}"
+26,3,True,llm,procedural,medium,"The student correctly identified the tangent of the angles, but incorrectly set up the equations for the two distances. They used the angles 84 and 35, but the initial angle of depression is 6 degrees and the second angle is 55 degrees. The correct approach would be to use the tangent of the initial angle of 6 degrees and the tangent of the second angle of 55 degrees to set up the equations.",other,"{
+  ""error_category"": ""procedural"",
+  ""explanation"": ""The student correctly identified the tangent of the angles, but incorrectly set up the equations for the two distances. They used the angles 84 and 35, but the initial angle of depression is 6 degrees and the second angle is 55 degrees. The correct approach would be to use the tangent of the initial angle of 6 degrees and the tangent of the second angle of 55 degrees to set up the equations."",
+  ""affected_concepts"": [""Understand that by similarity, side ratios in right triangles are properties of the angles in the triangle, leading to definitions of trigonometric ratios for sine, cosine, and tangent""],
+  ""severity"": ""medium"",
+  ""instructional_suggestions"": [
+    ""Review the concept of trigonometric ratios and their application to right triangles."",
+    ""Emphasize the importance of using the correct angles in the equations."",
+    ""Consider providing additional practice problems to reinforce the student's understanding of trigonometric ratios and their application to real-world problems.""
+  ]
+}"
+116,2,True,llm,procedural,medium,"The student correctly identified the key characteristics of the function but failed to apply them to the actual plotting process. They started by plotting the standard sine function, which is a correct first step, but it seems they didn't consider how to incorporate the given amplitude, period, phase shift, and vertical shift into the plotting process.",other,"{
+  ""error_category"": ""procedural"",
+  ""explanation"": ""The student correctly identified the key characteristics of the function but failed to apply them to the actual plotting process. They started by plotting the standard sine function, which is a correct first step, but it seems they didn't consider how to incorporate the given amplitude, period, phase shift, and vertical shift into the plotting process."",
+  ""affected_concepts"": [""Graph functions expressed symbolically and show key features of the graph""],
+  ""severity"": ""medium"",
+  ""instructional_suggestions"": [
+    ""Guide the student to explicitly incorporate the given characteristics into the plotting process, such as stretching, compressing, shifting, and reflecting the standard sine function."",
+    ""Emphasize the importance of visualizing how the given characteristics affect the graph of the function."",
+    ""Consider using technology to visualize the graph and explore how different characteristics impact the function's appearance.""
+  ]
+}"
+116,3,True,llm,procedural,medium,"The student correctly identified the amplitude, period, phase shift, and vertical shift but failed to apply these characteristics to adjust the period and phase shift of the standard sine function.",other,"{
+  ""error_category"": ""procedural"",
+  ""explanation"": ""The student correctly identified the amplitude, period, phase shift, and vertical shift but failed to apply these characteristics to adjust the period and phase shift of the standard sine function."",
+  ""affected_concepts"": [""Graph functions expressed symbolically and show key features of the graph"", ""Choose trigonometric functions to model periodic phenomena with specified amplitude, frequency, and midline""],
+  ""severity"": ""medium"",
+  ""instructional_suggestions"": [
+    ""Review the concept of how coefficients affect the period of a sine function."",
+    ""Emphasize the importance of considering all characteristics when graphing a function."",
+    ""Use visual aids or examples to illustrate how phase shifts and periods interact.""
+  ]
+}"
+116,4,True,llm,procedural,medium,"The student correctly identified the amplitude, phase shift, and vertical shift but failed to accurately describe the effect of the coefficient on the period. They stated that the period is pi, which is incorrect. The correct period should be 2π/2 = π.",other,"{
+  ""error_category"": ""procedural"",
+  ""explanation"": ""The student correctly identified the amplitude, phase shift, and vertical shift but failed to accurately describe the effect of the coefficient on the period. They stated that the period is pi, which is incorrect. The correct period should be 2π/2 = π."",
+  ""affected_concepts"": [""Graph functions expressed symbolically and show key features of the graph""],
+  ""severity"": ""medium"",
+  ""instructional_suggestions"": [
+    ""Review the concept of how coefficients affect the period of a sine function."",
+    ""Provide examples of how to calculate the period when there is a coefficient for x."",
+    ""Have the student practice identifying and calculating the period of different sine functions.""
+  ]
+}"
+116,6,True,llm,procedural,medium,"The student incorrectly identified the points on the graph, likely due to a misunderstanding of the period and phase shift. Specifically, they plotted points at intervals of 2π, instead of π.",other,"{
+  ""error_category"": ""procedural"",
+  ""explanation"": ""The student incorrectly identified the points on the graph, likely due to a misunderstanding of the period and phase shift. Specifically, they plotted points at intervals of 2π, instead of π."",
+  ""affected_concepts"": [""Graph functions expressed symbolically and show key features of the graph""],
+  ""severity"": ""medium"",
+  ""instructional_suggestions"": [
+    ""Review the concept of period and phase shift in trigonometric functions."",
+    ""Emphasize the importance of using the correct period when plotting points."",
+    ""Consider providing additional practice problems to reinforce the student's understanding of graphing trigonometric functions.""
+  ]
+}"
+107,5,True,llm,procedural,medium,"The student correctly multiplied the radius by pi to compute the area, but the correct formula is A = pi*r^2, not A = pi*r. This indicates a misunderstanding of the formula or a procedural error in applying it.",other,"{
+  ""error_category"": ""procedural"",
+  ""explanation"": ""The student correctly multiplied the radius by pi to compute the area, but the correct formula is A = pi*r^2, not A = pi*r. This indicates a misunderstanding of the formula or a procedural error in applying it."",
+  ""affected_concepts"": [""Know the formulas for the area and circumference of a circle and use them to solve problems""],
+  ""severity"": ""medium"",
+  ""instructional_suggestions"": [
+    ""Review the formula for the area of a circle and provide examples of its application."",
+    ""Emphasize the importance of accurately applying formulas in problem-solving."",
+    ""Consider providing a visual representation of the formula to help the student understand its structure.""
+  ]
+}"
+103,2,True,llm,conceptual,medium,"The student correctly identified the slope and y-intercept in the first equation, but the dialogue suggests that they are ready for more challenging problems. However, their expression of 'Do you have more challenging ones?' indicates a lack of understanding of the concept of slope and y-intercept in different equations. They seem to be focusing on the difficulty level of the problems rather than the underlying concept.",other,"{
+  ""error_category"": ""conceptual"",
+  ""explanation"": ""The student correctly identified the slope and y-intercept in the first equation, but the dialogue suggests that they are ready for more challenging problems. However, their expression of 'Do you have more challenging ones?' indicates a lack of understanding of the concept of slope and y-intercept in different equations. They seem to be focusing on the difficulty level of the problems rather than the underlying concept."",
+  ""affected_concepts"": [""Use similar triangles to explain why the slope m is the same between any two distinct points on a non-vertical line in the coordinate plane""],
+  ""severity"": ""medium"",
+  ""instructional_suggestions"": [
+    ""Provide the student with a variety of equations with different slopes and y-intercepts to help them understand the concept better."",
+    ""Ask the student to explain why the slope and y-intercept are the same in different equations."",
+    ""Use visual aids such as graphs or tables to help the student visualize the concept.""
+  ]
+}"
+117,1,True,llm,procedural,medium,The student has provided a statement that is true but does not address the task of confirming the trigonometric identity. They need to provide a step-by-step proof or explanation to demonstrate the validity of the identity.,other,"{
+  ""error_category"": ""procedural"",
+  ""explanation"": ""The student has provided a statement that is true but does not address the task of confirming the trigonometric identity. They need to provide a step-by-step proof or explanation to demonstrate the validity of the identity."",
+  ""affected_concepts"": [""Prove the Pythagorean identity sin^(2)(θ) + cos^(2)(θ) = 1""],
+  ""severity"": ""medium"",
+  ""instructional_suggestions"": [
+    ""Guide the student to start by recalling the Pythagorean identity and explaining its significance in trigonometry."",
+    ""Encourage the student to provide a step-by-step proof or explanation to demonstrate the validity of the identity."",
+    ""Remind the student that confirming an identity involves showing that it is true for all possible values of the variable.""
+  ]
+}"
+117,2,True,llm,procedural,medium,The student is attempting to bypass the proof of the Pythagorean identity and directly apply it without demonstrating its validity. This indicates a misunderstanding of the procedural steps involved in trigonometric identities.,conceptual,"{
+  ""error_category"": ""procedural"",
+  ""explanation"": ""The student is attempting to bypass the proof of the Pythagorean identity and directly apply it without demonstrating its validity. This indicates a misunderstanding of the procedural steps involved in trigonometric identities."",
+  ""affected_concepts"": [""Prove the Pythagorean identity sin^(2)(θ) + cos^(2)(θ) = 1""],
+  ""severity"": ""medium"",
+  ""instructional_suggestions"": [
+    ""Encourage the student to derive the Pythagorean identity from basic trigonometric definitions and the unit circle."",
+    ""Have the student explain the reasoning behind the identity and its implications."",
+    ""Provide examples of how the identity can be used to find other trigonometric values.""
+  ]
+}"
+117,3,True,llm,procedural,medium,The student is attempting to bypass the process of demonstrating the trigonometric identity and instead wants to apply the established rule directly. This indicates a misunderstanding of the procedural steps involved in proving trigonometric identities.,other,"{
+  ""error_category"": ""procedural"",
+  ""explanation"": ""The student is attempting to bypass the process of demonstrating the trigonometric identity and instead wants to apply the established rule directly. This indicates a misunderstanding of the procedural steps involved in proving trigonometric identities."",
+  ""affected_concepts"": [""Prove the Pythagorean identity sin^(2)(θ) + cos^(2)(θ) = 1""],
+  ""severity"": ""medium"",
+  ""instructional_suggestions"": [
+    ""Encourage the student to work through the proof of the Pythagorean identity step-by-step to understand the underlying concepts."",
+    ""Provide examples of complex expressions on both sides of the equation that require the use of trigonometric identities to prove equality."",
+    ""Emphasize the importance of procedural understanding in mathematics, particularly in trigonometry.""
+  ]
+}"
+137,2,True,llm,procedural,medium,"The student's initial step to add 4 to both sides is correct, but the inequality is not yet in a form where this operation is valid. The student should first isolate the term involving the variable, which is 1/3x, before adding 4 to both sides.",other,"{
+  ""error_category"": ""procedural"",
+  ""explanation"": ""The student's initial step to add 4 to both sides is correct, but the inequality is not yet in a form where this operation is valid. The student should first isolate the term involving the variable, which is 1/3x, before adding 4 to both sides."",
+  ""affected_concepts"": [
+    ""Understand solving an equation or inequality as a process of answering a question: which values from a specified set, if any, make the equation or inequality..."",
+    ""Use variables to represent numbers and write expressions when solving a real-world or mathematical problem""
+  ],
+  ""severity"": ""medium"",
+  ""instructional_suggestions"": [
+    ""Remind the student to isolate the variable term before performing operations on both sides."",
+    ""Encourage the student to check the direction of the inequality after each step."",
+    ""Consider providing a worked example of solving a similar inequality to reinforce the student's understanding.""
+  ]
+}"
+137,6,True,llm,procedural,medium,"The student correctly isolated the variable x, but then incorrectly suggested dividing both sides by 1/3, which is equivalent to multiplying by 3. This indicates a misunderstanding of the inverse operations.",other,"{
+  ""error_category"": ""procedural"",
+  ""explanation"": ""The student correctly isolated the variable x, but then incorrectly suggested dividing both sides by 1/3, which is equivalent to multiplying by 3. This indicates a misunderstanding of the inverse operations."",
+  ""affected_concepts"": [
+    ""Understand solving an equation or inequality as a process of answering a question: which values from a specified set, if any, make the equation or inequality..."",
+    ""Use variables to represent numbers and write expressions when solving a real-world or mathematical problem""
+  ],
+  ""severity"": ""medium"",
+  ""instructional_suggestions"": [
+    ""Review the concept of inverse operations and how to apply them correctly in solving equations and inequalities."",
+    ""Provide additional practice exercises that focus on isolating variables and applying inverse operations."",
+    ""Emphasize the importance of checking the validity of the operations performed in solving equations and inequalities.""
+  ]
+}"
+137,7,True,llm,procedural,medium,"The student incorrectly identified the operation to perform on both sides of the inequality after isolating x. They suggested dividing by 1/3, which is equivalent to multiplying by 3, but then incorrectly applied this operation to the right-hand side of the inequality.",other,"{
+  ""error_category"": ""procedural"",
+  ""explanation"": ""The student incorrectly identified the operation to perform on both sides of the inequality after isolating x. They suggested dividing by 1/3, which is equivalent to multiplying by 3, but then incorrectly applied this operation to the right-hand side of the inequality."",
+  ""affected_concepts"": [
+    ""Understand solving an equation or inequality as a process of answering a question: which values from a specified set, if any, make the equation or inequality..."",
+    ""Use variables to represent numbers and write expressions when solving a real-world or mathematical problem"",
+    ""Solve linear equations and inequalities in one variable, including equations with coefficients represented by letters""
+  ],
+  ""severity"": ""medium"",
+  ""instructional_suggestions"": [
+    ""Review the concept of inverse operations and how to apply them correctly in solving inequalities."",
+    ""Emphasize the importance of maintaining the equality of operations on both sides of the inequality."",
+    ""Provide additional practice exercises that focus on solving linear inequalities with coefficients represented by letters.""
+  ]
+}"
+137,8,True,llm,procedural,medium,"The student incorrectly multiplied the entire inequality by 3, instead of just the term containing the variable. This led to a loss of the inequality's direction and an incorrect solution.",other,"{
+  ""error_category"": ""procedural"",
+  ""explanation"": ""The student incorrectly multiplied the entire inequality by 3, instead of just the term containing the variable. This led to a loss of the inequality's direction and an incorrect solution."",
+  ""affected_concepts"": [
+    ""Understand solving an equation or inequality as a process of answering a question: which values from a specified set, if any, make the equation or inequality..."",
+    ""Use variables to represent numbers and write expressions when solving a real-world or mathematical problem"",
+    ""Solve linear equations and inequalities in one variable, including equations with coefficients represented by letters""
+  ],
+  ""severity"": ""medium"",
+  ""instructional_suggestions"": [
+    ""Review the concept of multiplying both sides of an inequality by a constant, and how it affects the direction of the inequality."",
+    ""Practice solving linear inequalities with different coefficients and directions."",
+    ""Emphasize the importance of maintaining the direction of the inequality when performing operations on both sides.""
+  ]
+}"
+137,9,True,llm,procedural,medium,The student incorrectly multiplied the entire expression by 3 instead of just the fraction 1/3x. This led to a misunderstanding of the operation needed to isolate x.,other,"{
+  ""error_category"": ""procedural"",
+  ""explanation"": ""The student incorrectly multiplied the entire expression by 3 instead of just the fraction 1/3x. This led to a misunderstanding of the operation needed to isolate x."",
+  ""affected_concepts"": [
+    ""Understand solving an equation or inequality as a process of answering a question: which values from a specified set, if any, make the equation or inequality..."",
+    ""Use variables to represent numbers and write expressions when solving a real-world or mathematical problem"",
+    ""Solve linear equations and inequalities in one variable, including equations with coefficients represented by letters""
+  ],
+  ""severity"": ""medium"",
+  ""instructional_suggestions"": [
+    ""Review the concept of isolating variables in inequalities and provide examples for the student to practice."",
+    ""Emphasize the importance of carefully reading and following the instructions in the problem."",
+    ""Consider providing additional support or practice exercises to help the student build confidence in solving linear inequalities.""
+  ]
+}"
+137,16,True,llm,procedural,medium,"The student incorrectly multiplied 1/3x by 3, resulting in 0 instead of x. This was due to a misunderstanding of the inverse operation of division.",other,"{
+  ""error_category"": ""procedural"",
+  ""explanation"": ""The student incorrectly multiplied 1/3x by 3, resulting in 0 instead of x. This was due to a misunderstanding of the inverse operation of division."",
+  ""affected_concepts"": [
+    ""Understand solving an equation or inequality as a process of answering a question: which values from a specified set, if any, make the equation or inequality..."",
+    ""Use variables to represent numbers and write expressions when solving a real-world or mathematical problem"",
+    ""Solve linear equations and inequalities in one variable, including equations with coefficients represented by letters""
+  ],
+  ""severity"": ""medium"",
+  ""instructional_suggestions"": [
+    ""Review the concept of inverse operations and how they apply to division and multiplication."",
+    ""Practice solving linear equations and inequalities to reinforce understanding of the process."",
+    ""Emphasize the importance of careful attention to detail when performing operations.""
+  ]
+}"
+114,1,True,llm,conceptual,medium,"The student's definition of the radius is incorrect, as it refers to the measurement from the center of the shape to one of its edges, rather than the distance from the center to a vertex.",other,"{
+  ""error_category"": ""conceptual"",
+  ""explanation"": ""The student's definition of the radius is incorrect, as it refers to the measurement from the center of the shape to one of its edges, rather than the distance from the center to a vertex."",
+  ""affected_concepts"": [
+    ""Distinguish between defining attributes (e.g., triangles are closed and three-sided) versus non-defining attributes (e.g., color, orientation, overall size)"",
+    ""Recognize and draw shapes having specified attributes, such as a given number of angles or a given number of equal faces""
+  ],
+  ""severity"": ""medium"",
+  ""instructional_suggestions"": [
+    ""Review the definition of radius and its application to circles and regular polygons."",
+    ""Use visual aids to illustrate the correct definition and its implications."",
+    ""Encourage the student to provide a clear and concise definition of key terms.""
+  ]
+}"

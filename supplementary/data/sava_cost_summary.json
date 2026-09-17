@@ -1,0 +1,19 @@
+{
+ "cost": {
+  "n_turns": 1985,
+  "rerun_matches_recorded_verdict": 1.0,
+  "rerun_matches_recorded_stage": 1.0,
+  "mean_ms_per_turn": 0.26926768832823605,
+  "median_ms_per_turn": 0.314874981995672,
+  "p95_ms_per_turn": 0.4220085800625384,
+  "max_ms_per_turn": 0.6531249964609742,
+  "total_s_all_turns": 0.5344963613315485,
+  "note": "single CPU core, no GPU, no network; SymPy cascade only"
+ },
+ "sizing": {
+  "sample_n": 139,
+  "ci_halfwidth_at_sample_n": 0.07198620971053558,
+  "n_for_5pp_halfwidth": 289,
+  "n_for_1pp_halfwidth": 7203
+ }
+}

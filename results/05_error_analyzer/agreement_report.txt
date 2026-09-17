@@ -1,0 +1,16 @@
+n = 46
+Cohen's kappa (primary labels) = 0.570
+Raw agreement = 0.696
+Relaxed agreement (either primary matches the other's primary or secondary) = 0.739
+
+Confusion (rows A, columns B):
+B            conceptual  procedural  calculation  careless  other
+A                                                                
+conceptual            3           1            1         0      0
+procedural            3          11            1         1      1
+calculation           0           1            2         1      0
+careless              0           0            0         1      0
+other                 2           2            0         0     15
+
+Label distribution A: {'other': 19, 'procedural': 17, 'conceptual': 5, 'calculation': 4, 'careless': 1}
+Label distribution B: {'other': 16, 'procedural': 15, 'conceptual': 8, 'calculation': 4, 'careless': 3}

@@ -1,0 +1,90 @@
+{
+ "sigma_hat_0.061": {
+  "greedy_lowest_first": {
+   "mta_at_least_as_good": 32,
+   "cells": 48,
+   "mean_mta_minus_policy": 0.24250868055555555,
+   "mta_mean": 0.6264583333333333,
+   "policy_mean": 0.38394965277777776
+  },
+  "random_unmastered": {
+   "mta_at_least_as_good": 33,
+   "cells": 48,
+   "mean_mta_minus_policy": 0.19664062499999999,
+   "mta_mean": 0.6264583333333333,
+   "policy_mean": 0.4298177083333334
+  },
+  "fixed_curriculum_no_skip": {
+   "mta_at_least_as_good": 42,
+   "cells": 48,
+   "mean_mta_minus_policy": 0.2228472222222222,
+   "mta_mean": 0.6264583333333333,
+   "policy_mean": 0.40361111111111114
+  },
+  "prereq_lowest_first_previous": {
+   "mta_at_least_as_good": 29,
+   "cells": 48,
+   "mean_mta_minus_policy": 0.12819444444444444,
+   "mta_mean": 0.6264583333333333,
+   "policy_mean": 0.4982638888888889
+  },
+  "filtered_curriculum_index_order": {
+   "mta_at_least_as_good": 42,
+   "cells": 48,
+   "mean_mta_minus_policy": 0.01122395833333333,
+   "mta_mean": 0.6264583333333333,
+   "policy_mean": 0.615234375
+  },
+  "filtered_curriculum_random_topo": {
+   "mta_at_least_as_good": 39,
+   "cells": 48,
+   "mean_mta_minus_policy": 0.007465277777777775,
+   "mta_mean": 0.6264583333333333,
+   "policy_mean": 0.6189930555555555
+  }
+ },
+ "paper_0.10": {
+  "greedy_lowest_first": {
+   "mta_at_least_as_good": 32,
+   "cells": 48,
+   "mean_mta_minus_policy": 0.16360243055555557,
+   "mta_mean": 0.5504774305555555,
+   "policy_mean": 0.386875
+  },
+  "random_unmastered": {
+   "mta_at_least_as_good": 31,
+   "cells": 48,
+   "mean_mta_minus_policy": 0.13207465277777777,
+   "mta_mean": 0.5504774305555555,
+   "policy_mean": 0.41840277777777785
+  },
+  "fixed_curriculum_no_skip": {
+   "mta_at_least_as_good": 33,
+   "cells": 48,
+   "mean_mta_minus_policy": 0.14373263888888888,
+   "mta_mean": 0.5504774305555555,
+   "policy_mean": 0.40674479166666666
+  },
+  "prereq_lowest_first_previous": {
+   "mta_at_least_as_good": 28,
+   "cells": 48,
+   "mean_mta_minus_policy": 0.06910590277777777,
+   "mta_mean": 0.5504774305555555,
+   "policy_mean": 0.4813715277777777
+  },
+  "filtered_curriculum_index_order": {
+   "mta_at_least_as_good": 39,
+   "cells": 48,
+   "mean_mta_minus_policy": 0.022664930555555574,
+   "mta_mean": 0.5504774305555555,
+   "policy_mean": 0.5278124999999999
+  },
+  "filtered_curriculum_random_topo": {
+   "mta_at_least_as_good": 39,
+   "cells": 48,
+   "mean_mta_minus_policy": 0.02033854166666667,
+   "mta_mean": 0.5504774305555555,
+   "policy_mean": 0.5301388888888888
+  }
+ }
+}

@@ -1,7 +1,7 @@
 # cpu/ — chạy trên máy thường, không cần GPU
 
-Gói tái lập đã chép sẵn trong `revision_kit/MathKT-Agent_SoICT2026/`, các script tự tìm thấy
-(ghi đè bằng `MATHKT_ROOT` nếu để chỗ khác).
+Dữ liệu (`results/`, `raw_runs/`) nằm ở thư mục gốc repo, các script tự tìm thấy
+(ghi đè bằng `MATHKT_ROOT` nếu để chỗ khác). Chạy tất cả: `bash ../reproduce.sh`.
 
     python3 01_judge_threeway.py          # đã chạy -> out_01_*.json
     python3 02_calibration_downstream.py  # đã chạy -> out_02_*.json

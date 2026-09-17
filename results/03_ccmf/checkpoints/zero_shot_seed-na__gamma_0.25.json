@@ -1,0 +1,294 @@
+{
+  "fixed": {
+    "0": {
+      "loss": 0.6917462827512316,
+      "x": [
+        0.24454497852483928,
+        -2.9999999680193543,
+        8.0,
+        3.3575976920032464
+      ],
+      "x0": [
+        0.0,
+        0.0,
+        -2.0,
+        -2.0
+      ],
+      "runs": [
+        {
+          "stage": "main",
+          "success": true,
+          "loss": 0.6917645088886456,
+          "iterations": 238,
+          "nfev": 391,
+          "message": "Optimization terminated successfully."
+        },
+        {
+          "stage": "polish",
+          "success": true,
+          "loss": 0.6917462827512396,
+          "iterations": 199,
+          "nfev": 352,
+          "message": "Optimization terminated successfully."
+        },
+        {
+          "stage": "polish",
+          "success": true,
+          "loss": 0.6917462827512316,
+          "iterations": 51,
+          "nfev": 93,
+          "message": "Optimization terminated successfully."
+        }
+      ],
+      "nit_total": 488,
+      "nfev_total": 836,
+      "hit_maxiter": false,
+      "success": true,
+      "n_polish_accepted": 2,
+      "elapsed_s": 1.1103394160163589,
+      "kind": "gamma",
+      "tag": "zero_shot_seed-na",
+      "gamma": 0.25,
+      "start": 0
+    },
+    "1": {
+      "loss": 0.6917462827514526,
+      "x": [
+        0.24453721380668816,
+        -3.0,
+        7.999986949754339,
+        3.357597278221758
+      ],
+      "x0": [
+        0.3,
+        -0.2,
+        -1.5,
+        -2.5
+      ],
+      "runs": [
+        {
+          "stage": "main",
+          "success": true,
+          "loss": 0.6922931409831297,
+          "iterations": 55,
+          "nfev": 95,
+          "message": "Optimization terminated successfully."
+        },
+        {
+          "stage": "polish",
+          "success": true,
+          "loss": 0.6917462827514526,
+          "iterations": 326,
+          "nfev": 583,
+          "message": "Optimization terminated successfully."
+        },
+        {
+          "stage": "polish",
+          "success": true,
+          "loss": 0.6917462827514526,
+          "iterations": 52,
+          "nfev": 92,
+          "message": "Optimization terminated successfully."
+        }
+      ],
+      "nit_total": 433,
+      "nfev_total": 770,
+      "hit_maxiter": false,
+      "success": true,
+      "n_polish_accepted": 1,
+      "elapsed_s": 1.0212209580349736,
+      "kind": "gamma",
+      "tag": "zero_shot_seed-na",
+      "gamma": 0.25,
+      "start": 1
+    },
+    "2": {
+      "loss": 0.6917462827512255,
+      "x": [
+        0.24458275070850735,
+        -3.0,
+        8.0,
+        3.357607959098113
+      ],
+      "x0": [
+        -0.3,
+        0.2,
+        -2.5,
+        -1.5
+      ],
+      "runs": [
+        {
+          "stage": "main",
+          "success": true,
+          "loss": 0.6917645088476447,
+          "iterations": 197,
+          "nfev": 333,
+          "message": "Optimization terminated successfully."
+        },
+        {
+          "stage": "polish",
+          "success": true,
+          "loss": 0.6917462827512255,
+          "iterations": 196,
+          "nfev": 348,
+          "message": "Optimization terminated successfully."
+        },
+        {
+          "stage": "polish",
+          "success": true,
+          "loss": 0.6917462827512255,
+          "iterations": 53,
+          "nfev": 96,
+          "message": "Optimization terminated successfully."
+        }
+      ],
+      "nit_total": 446,
+      "nfev_total": 777,
+      "hit_maxiter": false,
+      "success": true,
+      "n_polish_accepted": 1,
+      "elapsed_s": 1.0562301659956574,
+      "kind": "gamma",
+      "tag": "zero_shot_seed-na",
+      "gamma": 0.25,
+      "start": 2
+    },
+    "3": {
+      "loss": 0.6917462827512232,
+      "x": [
+        0.24457698118201085,
+        -3.0,
+        7.99999965550267,
+        3.357601906101574
+      ],
+      "x0": [
+        0.0,
+        0.0,
+        -1.0,
+        -3.0
+      ],
+      "runs": [
+        {
+          "stage": "main",
+          "success": true,
+          "loss": 0.6917462827551537,
+          "iterations": 824,
+          "nfev": 1366,
+          "message": "Optimization terminated successfully."
+        },
+        {
+          "stage": "polish",
+          "success": true,
+          "loss": 0.6917462827512232,
+          "iterations": 86,
+          "nfev": 149,
+          "message": "Optimization terminated successfully."
+        }
+      ],
+      "nit_total": 910,
+      "nfev_total": 1515,
+      "hit_maxiter": false,
+      "success": true,
+      "n_polish_accepted": 1,
+      "elapsed_s": 2.0941964160301723,
+      "kind": "gamma",
+      "tag": "zero_shot_seed-na",
+      "gamma": 0.25,
+      "start": 3
+    },
+    "4": {
+      "loss": 0.6917462827512945,
+      "x": [
+        0.24451607414645446,
+        -3.0,
+        7.999995968618782,
+        3.357598579103295
+      ],
+      "x0": [
+        0.6,
+        -0.4,
+        -3.0,
+        -1.0
+      ],
+      "runs": [
+        {
+          "stage": "main",
+          "success": true,
+          "loss": 0.6917462827513572,
+          "iterations": 346,
+          "nfev": 571,
+          "message": "Optimization terminated successfully."
+        },
+        {
+          "stage": "polish",
+          "success": true,
+          "loss": 0.6917462827512945,
+          "iterations": 57,
+          "nfev": 102,
+          "message": "Optimization terminated successfully."
+        }
+      ],
+      "nit_total": 403,
+      "nfev_total": 673,
+      "hit_maxiter": false,
+      "success": true,
+      "n_polish_accepted": 1,
+      "elapsed_s": 0.9924694999936037,
+      "kind": "gamma",
+      "tag": "zero_shot_seed-na",
+      "gamma": 0.25,
+      "start": 4
+    },
+    "5": {
+      "loss": 0.6917462827512422,
+      "x": [
+        0.24453337359696925,
+        -3.0,
+        8.0,
+        3.3575956563323626
+      ],
+      "x0": [
+        0.0,
+        0.0,
+        -8.0,
+        -8.0
+      ],
+      "runs": [
+        {
+          "stage": "main",
+          "success": true,
+          "loss": 0.6917645088415937,
+          "iterations": 451,
+          "nfev": 770,
+          "message": "Optimization terminated successfully."
+        },
+        {
+          "stage": "polish",
+          "success": true,
+          "loss": 0.6917462827512422,
+          "iterations": 208,
+          "nfev": 363,
+          "message": "Optimization terminated successfully."
+        },
+        {
+          "stage": "polish",
+          "success": true,
+          "loss": 0.6917462827512422,
+          "iterations": 52,
+          "nfev": 92,
+          "message": "Optimization terminated successfully."
+        }
+      ],
+      "nit_total": 711,
+      "nfev_total": 1225,
+      "hit_maxiter": false,
+      "success": true,
+      "n_polish_accepted": 1,
+      "elapsed_s": 1.7218457499984652,
+      "kind": "gamma",
+      "tag": "zero_shot_seed-na",
+      "gamma": 0.25,
+      "start": 5
+    }
+  }
+}
